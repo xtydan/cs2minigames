@@ -1,5 +1,0 @@
-2026/01/29-12:59:50.580 1f50 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.flashscore.pl_0.indexeddb.leveldb/MANIFEST-000001
-2026/01/29-12:59:50.581 1f50 Recovering log #25
-2026/01/29-12:59:50.581 1f50 Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.flashscore.pl_0.indexeddb.leveldb/000025.log 
-2026/01/29-12:59:50.581 1f50 Delete type=2 #23
-2026/01/29-12:59:50.616 2710 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)

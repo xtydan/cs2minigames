@@ -1,6 +1,0 @@
-2026/02/03-17:31:04.995 3bc0 Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.lidl.pl_0.indexeddb.leveldb since it was missing.
-2026/02/03-17:31:05.007 3bc0 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.lidl.pl_0.indexeddb.leveldb/MANIFEST-000001
-2026/02/03-17:31:37.011 d1c Level-0 table #5: started
-2026/02/03-17:31:37.016 d1c Level-0 table #5: 2747 bytes OK
-2026/02/03-17:31:37.023 d1c Delete type=0 #3
-2026/02/03-17:31:37.023 d1c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

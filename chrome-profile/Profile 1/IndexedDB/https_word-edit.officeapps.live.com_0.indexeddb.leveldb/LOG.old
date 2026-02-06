@@ -1,6 +1,0 @@
-2026/01/24-11:35:37.814 450 Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_word-edit.officeapps.live.com_0.indexeddb.leveldb since it was missing.
-2026/01/24-11:35:37.829 450 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_word-edit.officeapps.live.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/01/24-12:21:51.497 1470 Level-0 table #5: started
-2026/01/24-12:21:51.501 1470 Level-0 table #5: 4159 bytes OK
-2026/01/24-12:21:51.509 1470 Delete type=0 #3
-2026/01/24-12:21:51.510 1470 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

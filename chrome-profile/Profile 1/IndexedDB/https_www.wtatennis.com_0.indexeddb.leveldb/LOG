@@ -1,6 +1,0 @@
-2026/02/01-18:12:56.385 185c Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.wtatennis.com_0.indexeddb.leveldb since it was missing.
-2026/02/01-18:12:56.399 185c Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.wtatennis.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/02/01-18:17:28.441 33b4 Level-0 table #5: started
-2026/02/01-18:17:28.444 33b4 Level-0 table #5: 2530 bytes OK
-2026/02/01-18:17:28.449 33b4 Delete type=0 #3
-2026/02/01-18:17:28.449 33b4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

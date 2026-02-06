@@ -1,6 +1,0 @@
-2026/01/25-19:30:20.725 2b0c Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_zapier.com_0.indexeddb.leveldb since it was missing.
-2026/01/25-19:30:20.740 2b0c Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_zapier.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/01/25-19:33:30.958 340c Level-0 table #5: started
-2026/01/25-19:33:30.963 340c Level-0 table #5: 4755 bytes OK
-2026/01/25-19:33:30.969 340c Delete type=0 #3
-2026/01/25-19:33:30.970 340c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
