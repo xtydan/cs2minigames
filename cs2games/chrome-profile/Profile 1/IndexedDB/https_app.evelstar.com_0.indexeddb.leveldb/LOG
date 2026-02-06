@@ -1,0 +1,17 @@
+2026/01/23-11:56:19.763 3a3c Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_app.evelstar.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/23-11:56:19.763 3a3c Recovering log #8
+2026/01/23-11:56:19.764 3a3c Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_app.evelstar.com_0.indexeddb.leveldb/000008.log 
+2026/01/23-11:56:19.794 3ae4 Level-0 table #14: started
+2026/01/23-11:56:19.807 3ae4 Level-0 table #14: 806 bytes OK
+2026/01/23-11:56:19.813 3ae4 Delete type=0 #8
+2026/01/23-11:56:19.813 3ae4 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/23-11:56:19.851 2f80 Level-0 table #16: started
+2026/01/23-11:56:19.855 2f80 Level-0 table #16: 2229 bytes OK
+2026/01/23-11:56:19.857 2f80 Delete type=0 #13
+2026/01/23-11:56:19.858 3a3c Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 302 : 1
+2026/01/23-11:56:19.858 3a3c Compacting 1@0 + 1@1 files
+2026/01/23-11:56:19.861 3a3c Generated table #17@0: 25 keys, 862 bytes
+2026/01/23-11:56:19.862 3a3c Compacted 1@0 + 1@1 files => 862 bytes
+2026/01/23-11:56:19.865 3a3c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/23-11:56:19.865 3a3c Delete type=2 #16
+2026/01/23-11:56:19.866 3a3c Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 302 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

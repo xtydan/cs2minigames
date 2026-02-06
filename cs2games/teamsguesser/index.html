@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TeamsGuesser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>TeamsGuesser</h1>
+    <p>Guess the player based off all teams he played for. Data taken on 5.02.26.</p>
+
+    <!-- LEVEL SELECTION -->
+    <div id="levelSelection" class="tiles-container">
+      <div class="level-tile" data-level="easy">
+        <div class="level-name">Easy</div>
+        <div class="level-desc">Teams + Dates</div>
+      </div>
+      <div class="level-tile" data-level="medium">
+        <div class="level-name">Medium</div>
+        <div class="level-desc">Teams in order</div>
+      </div>
+      <div class="level-tile" data-level="hard">
+        <div class="level-name">Hard</div>
+        <div class="level-desc">Teams shuffled</div>
+      </div>
+    </div>
+
+    <!-- GAME PANEL -->
+    <div id="gamePanel" class="hidden">
+      <div id="levelInfo" class="legend"></div>
+      <div id="tiles" class="tiles-container"></div>
+
+      <div class="input-section">
+        <input type="text" id="playerInput" placeholder="Guess the player">
+        <button id="guessBtn">Guess</button>
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+      </div>
+
+      <div class="attempts">Attempts left: <span id="attemptsLeft">5</span></div>
+      <button id="backBtn">Back to Levels</button>
+      <div id="endGame" class="end-game hidden"></div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

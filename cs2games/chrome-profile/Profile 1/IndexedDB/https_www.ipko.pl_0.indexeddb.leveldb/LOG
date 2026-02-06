@@ -1,0 +1,6 @@
+2026/01/24-20:39:42.512 2340 Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.ipko.pl_0.indexeddb.leveldb since it was missing.
+2026/01/24-20:39:42.522 2340 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.ipko.pl_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/24-20:39:44.548 2360 Level-0 table #5: started
+2026/01/24-20:39:44.553 2360 Level-0 table #5: 1035 bytes OK
+2026/01/24-20:39:44.559 2360 Delete type=0 #3
+2026/01/24-20:39:44.561 2360 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

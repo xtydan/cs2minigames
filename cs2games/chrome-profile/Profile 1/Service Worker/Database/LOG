@@ -1,0 +1,81 @@
+2026/02/06-00:58:21.894 850 Reusing MANIFEST C:\cs2games\chrome-profile\Profile 1\Service Worker\Database/MANIFEST-000001
+2026/02/06-00:58:21.896 850 Recovering log #68
+2026/02/06-00:58:21.896 850 Reusing old log C:\cs2games\chrome-profile\Profile 1\Service Worker\Database/000068.log 
+2026/02/06-01:09:35.939 1810 Compacting 1@1 + 1@2 files
+2026/02/06-01:09:35.945 1810 Generated table #71@1: 213 keys, 19687 bytes
+2026/02/06-01:09:35.945 1810 Compacted 1@1 + 1@2 files => 19687 bytes
+2026/02/06-01:09:35.994 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-01:09:35.994 1810 Delete type=2 #67
+2026/02/06-01:09:35.994 1810 Delete type=2 #69
+2026/02/06-01:16:32.356 850 Level-0 table #73: started
+2026/02/06-01:16:32.361 850 Level-0 table #73: 80662 bytes OK
+2026/02/06-01:16:32.365 850 Delete type=0 #68
+2026/02/06-01:20:20.636 850 Compacting 1@1 + 1@2 files
+2026/02/06-01:20:20.640 850 Generated table #74@1: 213 keys, 19696 bytes
+2026/02/06-01:20:20.640 850 Compacted 1@1 + 1@2 files => 19696 bytes
+2026/02/06-01:20:20.642 850 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-01:20:20.642 850 Delete type=2 #71
+2026/02/06-01:20:20.642 850 Delete type=2 #73
+2026/02/06-01:35:18.224 850 Level-0 table #76: started
+2026/02/06-01:35:18.229 850 Level-0 table #76: 81950 bytes OK
+2026/02/06-01:35:18.232 850 Delete type=0 #72
+2026/02/06-01:39:11.844 1810 Compacting 1@1 + 1@2 files
+2026/02/06-01:39:11.849 1810 Generated table #77@1: 213 keys, 19695 bytes
+2026/02/06-01:39:11.849 1810 Compacted 1@1 + 1@2 files => 19695 bytes
+2026/02/06-01:39:11.851 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-01:39:11.852 1810 Delete type=2 #74
+2026/02/06-01:39:11.852 1810 Delete type=2 #76
+2026/02/06-01:54:11.251 1810 Level-0 table #79: started
+2026/02/06-01:54:11.258 1810 Level-0 table #79: 82122 bytes OK
+2026/02/06-01:54:11.263 1810 Delete type=0 #75
+2026/02/06-01:58:16.682 1810 Compacting 1@1 + 1@2 files
+2026/02/06-01:58:16.686 1810 Generated table #80@1: 213 keys, 19697 bytes
+2026/02/06-01:58:16.686 1810 Compacted 1@1 + 1@2 files => 19697 bytes
+2026/02/06-01:58:16.688 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-01:58:16.689 1810 Delete type=2 #77
+2026/02/06-01:58:16.689 1810 Delete type=2 #79
+2026/02/06-02:14:24.058 1810 Level-0 table #82: started
+2026/02/06-02:14:24.064 1810 Level-0 table #82: 81985 bytes OK
+2026/02/06-02:14:24.067 1810 Delete type=0 #78
+2026/02/06-02:18:27.798 1810 Compacting 1@1 + 1@2 files
+2026/02/06-02:18:27.803 1810 Generated table #83@1: 213 keys, 19690 bytes
+2026/02/06-02:18:27.803 1810 Compacted 1@1 + 1@2 files => 19690 bytes
+2026/02/06-02:18:27.805 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-02:18:27.806 1810 Delete type=2 #80
+2026/02/06-02:18:27.806 1810 Delete type=2 #82
+2026/02/06-02:34:04.724 1810 Level-0 table #85: started
+2026/02/06-02:34:04.731 1810 Level-0 table #85: 81967 bytes OK
+2026/02/06-02:34:04.735 1810 Delete type=0 #81
+2026/02/06-02:37:50.242 1810 Compacting 1@1 + 1@2 files
+2026/02/06-02:37:50.248 1810 Generated table #86@1: 213 keys, 19756 bytes
+2026/02/06-02:37:50.248 1810 Compacted 1@1 + 1@2 files => 19756 bytes
+2026/02/06-02:37:50.251 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-02:37:50.252 1810 Delete type=2 #83
+2026/02/06-02:37:50.252 1810 Delete type=2 #85
+2026/02/06-02:53:39.378 850 Level-0 table #88: started
+2026/02/06-02:53:39.384 850 Level-0 table #88: 81382 bytes OK
+2026/02/06-02:53:39.387 850 Delete type=0 #84
+2026/02/06-02:57:52.042 354c Compacting 1@1 + 1@2 files
+2026/02/06-02:57:52.047 354c Generated table #89@1: 213 keys, 19965 bytes
+2026/02/06-02:57:52.047 354c Compacted 1@1 + 1@2 files => 19965 bytes
+2026/02/06-02:57:52.049 354c compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-02:57:52.050 354c Delete type=2 #86
+2026/02/06-02:57:52.050 354c Delete type=2 #88
+2026/02/06-03:14:56.780 1810 Level-0 table #91: started
+2026/02/06-03:14:56.787 1810 Level-0 table #91: 82167 bytes OK
+2026/02/06-03:14:56.790 1810 Delete type=0 #87
+2026/02/06-03:19:25.803 1810 Compacting 1@1 + 1@2 files
+2026/02/06-03:19:25.813 1810 Generated table #92@1: 213 keys, 19883 bytes
+2026/02/06-03:19:25.813 1810 Compacted 1@1 + 1@2 files => 19883 bytes
+2026/02/06-03:19:25.817 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-03:34:17.382 1810 Level-0 table #94: started
+2026/02/06-03:34:17.389 1810 Level-0 table #94: 81342 bytes OK
+2026/02/06-03:34:17.393 1810 Delete type=2 #89
+2026/02/06-03:34:17.393 1810 Delete type=0 #90
+2026/02/06-03:34:17.393 1810 Delete type=2 #91
+2026/02/06-03:38:30.774 1810 Compacting 1@1 + 1@2 files
+2026/02/06-03:38:30.780 1810 Generated table #95@1: 213 keys, 19883 bytes
+2026/02/06-03:38:30.780 1810 Compacted 1@1 + 1@2 files => 19883 bytes
+2026/02/06-03:38:30.784 1810 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/06-03:38:30.784 1810 Delete type=2 #92
+2026/02/06-03:38:30.784 1810 Delete type=2 #94

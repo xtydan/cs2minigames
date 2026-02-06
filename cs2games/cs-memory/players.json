@@ -1,0 +1,866 @@
+[
+  {
+    "name": "ZywOo",
+    "team": "Vitality",
+    "maps": 46,
+    "rounds": 1032,
+    "kdDiff": 192,
+    "kd": 1.31,
+    "rating": 1.26
+  },
+  {
+    "name": "zweih",
+    "team": "PARIVISION",
+    "maps": 36,
+    "rounds": 835,
+    "kdDiff": -47,
+    "kd": 0.92,
+    "rating": 1
+  },
+  {
+    "name": "ztr",
+    "team": "GamerLegion",
+    "maps": 20,
+    "rounds": 443,
+    "kdDiff": -63,
+    "kd": 0.8,
+    "rating": 0.88
+  },
+  {
+    "name": "yxngstxr",
+    "team": "HEROIC",
+    "maps": 19,
+    "rounds": 398,
+    "kdDiff": -51,
+    "kd": 0.81,
+    "rating": 0.89
+  },
+  {
+    "name": "yuurih",
+    "team": "FURIA",
+    "maps": 35,
+    "rounds": 774,
+    "kdDiff": 3,
+    "kd": 1.01,
+    "rating": 1.07
+  },
+  {
+    "name": "YEKINDAR",
+    "team": "FURIA",
+    "maps": 35,
+    "rounds": 774,
+    "kdDiff": 14,
+    "kd": 1.03,
+    "rating": 1.1
+  },
+  {
+    "name": "xiELO",
+    "team": "PARIVISION",
+    "maps": 23,
+    "rounds": 527,
+    "kdDiff": 20,
+    "kd": 1.06,
+    "rating": 1.09
+  },
+  {
+    "name": "xfl0ud",
+    "team": "HEROIC",
+    "maps": 19,
+    "rounds": 398,
+    "kdDiff": -8,
+    "kd": 0.97,
+    "rating": 1.04
+  },
+  {
+    "name": "xertioN",
+    "team": "MOUZ",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": 38,
+    "kd": 1.1,
+    "rating": 1.18
+  },
+  {
+    "name": "XANTARES",
+    "team": "Aurora",
+    "maps": 29,
+    "rounds": 655,
+    "kdDiff": 57,
+    "kd": 1.13,
+    "rating": 1.19
+  },
+  {
+    "name": "woxic",
+    "team": "Aurora",
+    "maps": 29,
+    "rounds": 655,
+    "kdDiff": 20,
+    "kd": 1.05,
+    "rating": 1.01
+  },
+  {
+    "name": "Wicadia",
+    "team": "Aurora",
+    "maps": 29,
+    "rounds": 655,
+    "kdDiff": 45,
+    "kd": 1.1,
+    "rating": 1.15
+  },
+  {
+    "name": "w0nderful",
+    "team": "Natus Vincere",
+    "maps": 21,
+    "rounds": 459,
+    "kdDiff": 84,
+    "kd": 1.32,
+    "rating": 1.2
+  },
+  {
+    "name": "ultimate",
+    "team": "Liquid",
+    "maps": 19,
+    "rounds": 404,
+    "kdDiff": -38,
+    "kd": 0.86,
+    "rating": 0.87
+  },
+  {
+    "name": "Twistzz",
+    "team": "FaZe",
+    "maps": 23,
+    "rounds": 461,
+    "kdDiff": 18,
+    "kd": 1.06,
+    "rating": 1.12
+  },
+  {
+    "name": "torzsi",
+    "team": "MOUZ",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": 38,
+    "kd": 1.12,
+    "rating": 1.03
+  },
+  {
+    "name": "tN1R",
+    "team": "Spirit",
+    "maps": 29,
+    "rounds": 685,
+    "kdDiff": -21,
+    "kd": 0.95,
+    "rating": 0.98
+  },
+  {
+    "name": "TeSeS",
+    "team": "Falcons",
+    "maps": 39,
+    "rounds": 874,
+    "kdDiff": -100,
+    "kd": 0.82,
+    "rating": 0.91
+  },
+  {
+    "name": "Techno",
+    "team": "The MongolZ",
+    "maps": 24,
+    "rounds": 523,
+    "kdDiff": -7,
+    "kd": 0.98,
+    "rating": 0.95
+  },
+  {
+    "name": "Tauson",
+    "team": "GamerLegion",
+    "maps": 28,
+    "rounds": 619,
+    "kdDiff": 31,
+    "kd": 1.08,
+    "rating": 1.03
+  },
+  {
+    "name": "SunPayus",
+    "team": "G2",
+    "maps": 18,
+    "rounds": 384,
+    "kdDiff": 18,
+    "kd": 1.08,
+    "rating": 1.02
+  },
+  {
+    "name": "Staehr",
+    "team": "Astralis",
+    "maps": 26,
+    "rounds": 577,
+    "kdDiff": -48,
+    "kd": 0.89,
+    "rating": 1.01
+  },
+  {
+    "name": "Spinx",
+    "team": "MOUZ",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": 20,
+    "kd": 1.06,
+    "rating": 1.08
+  },
+  {
+    "name": "snow",
+    "team": "paiN",
+    "maps": 34,
+    "rounds": 770,
+    "kdDiff": -27,
+    "kd": 0.95,
+    "rating": 1
+  },
+  {
+    "name": "siuhy",
+    "team": "Liquid",
+    "maps": 19,
+    "rounds": 404,
+    "kdDiff": -62,
+    "kd": 0.79,
+    "rating": 0.89
+  },
+  {
+    "name": "sh1ro",
+    "team": "Spirit",
+    "maps": 29,
+    "rounds": 685,
+    "kdDiff": 159,
+    "kd": 1.44,
+    "rating": 1.18
+  },
+  {
+    "name": "saadzin",
+    "team": "Legacy",
+    "maps": 26,
+    "rounds": 596,
+    "kdDiff": 72,
+    "kd": 1.2,
+    "rating": 1.07
+  },
+  {
+    "name": "ropz",
+    "team": "Vitality",
+    "maps": 46,
+    "rounds": 1032,
+    "kdDiff": 136,
+    "kd": 1.22,
+    "rating": 1.16
+  },
+  {
+    "name": "REZ",
+    "team": "GamerLegion",
+    "maps": 28,
+    "rounds": 619,
+    "kdDiff": 32,
+    "kd": 1.08,
+    "rating": 1.11
+  },
+  {
+    "name": "PR",
+    "team": "GamerLegion",
+    "maps": 26,
+    "rounds": 573,
+    "kdDiff": 38,
+    "kd": 1.1,
+    "rating": 1.17
+  },
+  {
+    "name": "nqz",
+    "team": "paiN",
+    "maps": 34,
+    "rounds": 770,
+    "kdDiff": 57,
+    "kd": 1.12,
+    "rating": 1.02
+  },
+  {
+    "name": "npl",
+    "team": "B8",
+    "maps": 28,
+    "rounds": 614,
+    "kdDiff": 6,
+    "kd": 1.01,
+    "rating": 1.05
+  },
+  {
+    "name": "nota",
+    "team": "PARIVISION",
+    "maps": 23,
+    "rounds": 527,
+    "kdDiff": 14,
+    "kd": 1.04,
+    "rating": 1.12
+  },
+  {
+    "name": "nilo",
+    "team": "HEROIC",
+    "maps": 19,
+    "rounds": 398,
+    "kdDiff": 25,
+    "kd": 1.1,
+    "rating": 1.09
+  },
+  {
+    "name": "NiKo",
+    "team": "Falcons",
+    "maps": 39,
+    "rounds": 874,
+    "kdDiff": 51,
+    "kd": 1.09,
+    "rating": 1.1
+  },
+  {
+    "name": "nicx",
+    "team": "Passion UA",
+    "maps": 18,
+    "rounds": 395,
+    "kdDiff": -32,
+    "kd": 0.88,
+    "rating": 0.95
+  },
+  {
+    "name": "NertZ",
+    "team": "Liquid",
+    "maps": 19,
+    "rounds": 404,
+    "kdDiff": -3,
+    "kd": 0.99,
+    "rating": 1.02
+  },
+  {
+    "name": "NAF",
+    "team": "Liquid",
+    "maps": 19,
+    "rounds": 404,
+    "kdDiff": -7,
+    "kd": 0.97,
+    "rating": 1.02
+  },
+  {
+    "name": "n1ssim",
+    "team": "Legacy",
+    "maps": 26,
+    "rounds": 596,
+    "kdDiff": 13,
+    "kd": 1.03,
+    "rating": 1.06
+  },
+  {
+    "name": "mzinho",
+    "team": "The MongolZ",
+    "maps": 24,
+    "rounds": 523,
+    "kdDiff": 23,
+    "kd": 1.07,
+    "rating": 1.06
+  },
+  {
+    "name": "molodoy",
+    "team": "FURIA",
+    "maps": 35,
+    "rounds": 774,
+    "kdDiff": 129,
+    "kd": 1.27,
+    "rating": 1.13
+  },
+  {
+    "name": "mezii",
+    "team": "Vitality",
+    "maps": 46,
+    "rounds": 1032,
+    "kdDiff": 6,
+    "kd": 1.01,
+    "rating": 1.05
+  },
+  {
+    "name": "MATYS",
+    "team": "G2",
+    "maps": 18,
+    "rounds": 384,
+    "kdDiff": -15,
+    "kd": 0.94,
+    "rating": 1.04
+  },
+  {
+    "name": "malbsMd",
+    "team": "G2",
+    "maps": 18,
+    "rounds": 384,
+    "kdDiff": -38,
+    "kd": 0.86,
+    "rating": 0.96
+  },
+  {
+    "name": "makazze",
+    "team": "Natus Vincere",
+    "maps": 21,
+    "rounds": 459,
+    "kdDiff": -5,
+    "kd": 0.98,
+    "rating": 1.1
+  },
+  {
+    "name": "Maka",
+    "team": "3DMAX",
+    "maps": 19,
+    "rounds": 388,
+    "kdDiff": -16,
+    "kd": 0.94,
+    "rating": 0.96
+  },
+  {
+    "name": "MAJ3R",
+    "team": "Aurora",
+    "maps": 29,
+    "rounds": 655,
+    "kdDiff": -76,
+    "kd": 0.82,
+    "rating": 0.88
+  },
+  {
+    "name": "Magisk",
+    "team": "Astralis",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": 5,
+    "kd": 1.01,
+    "rating": 1.02
+  },
+  {
+    "name": "m0NESY",
+    "team": "Falcons",
+    "maps": 39,
+    "rounds": 874,
+    "kdDiff": 197,
+    "kd": 1.38,
+    "rating": 1.26
+  },
+  {
+    "name": "lux",
+    "team": "Legacy",
+    "maps": 26,
+    "rounds": 596,
+    "kdDiff": -45,
+    "kd": 0.89,
+    "rating": 0.94
+  },
+  {
+    "name": "Lucky",
+    "team": "3DMAX",
+    "maps": 19,
+    "rounds": 388,
+    "kdDiff": -14,
+    "kd": 0.95,
+    "rating": 1
+  },
+  {
+    "name": "latto",
+    "team": "Legacy",
+    "maps": 26,
+    "rounds": 596,
+    "kdDiff": 25,
+    "kd": 1.07,
+    "rating": 1.1
+  },
+  {
+    "name": "kyxsan",
+    "team": "Falcons",
+    "maps": 39,
+    "rounds": 874,
+    "kdDiff": -56,
+    "kd": 0.9,
+    "rating": 1.02
+  },
+  {
+    "name": "kyousuke",
+    "team": "Falcons",
+    "maps": 31,
+    "rounds": 694,
+    "kdDiff": 52,
+    "kd": 1.11,
+    "rating": 1.12
+  },
+  {
+    "name": "Kvem",
+    "team": "Passion UA",
+    "maps": 18,
+    "rounds": 395,
+    "kdDiff": -24,
+    "kd": 0.92,
+    "rating": 1.03
+  },
+  {
+    "name": "KSCERATO",
+    "team": "FURIA",
+    "maps": 35,
+    "rounds": 774,
+    "kdDiff": 80,
+    "kd": 1.17,
+    "rating": 1.19
+  },
+  {
+    "name": "kensizor",
+    "team": "B8",
+    "maps": 28,
+    "rounds": 614,
+    "kdDiff": 8,
+    "kd": 1.02,
+    "rating": 1.11
+  },
+  {
+    "name": "karrigan",
+    "team": "FaZe",
+    "maps": 23,
+    "rounds": 461,
+    "kdDiff": -81,
+    "kd": 0.75,
+    "rating": 0.84
+  },
+  {
+    "name": "JT",
+    "team": "Passion UA",
+    "maps": 18,
+    "rounds": 395,
+    "kdDiff": -43,
+    "kd": 0.85,
+    "rating": 1.01
+  },
+  {
+    "name": "jottAAA",
+    "team": "Aurora",
+    "maps": 26,
+    "rounds": 585,
+    "kdDiff": -53,
+    "kd": 0.87,
+    "rating": 0.94
+  },
+  {
+    "name": "Jimpphat",
+    "team": "MOUZ",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": 17,
+    "kd": 1.05,
+    "rating": 1.02
+  },
+  {
+    "name": "jcobbb",
+    "team": "FaZe",
+    "maps": 23,
+    "rounds": 461,
+    "kdDiff": -9,
+    "kd": 0.97,
+    "rating": 1.04
+  },
+  {
+    "name": "Jame",
+    "team": "PARIVISION",
+    "maps": 23,
+    "rounds": 527,
+    "kdDiff": 65,
+    "kd": 1.25,
+    "rating": 1.04
+  },
+  {
+    "name": "jabbi",
+    "team": "Astralis",
+    "maps": 26,
+    "rounds": 577,
+    "kdDiff": -25,
+    "kd": 0.94,
+    "rating": 1
+  },
+  {
+    "name": "iM",
+    "team": "Natus Vincere",
+    "maps": 21,
+    "rounds": 459,
+    "kdDiff": 27,
+    "kd": 1.09,
+    "rating": 1.12
+  },
+  {
+    "name": "hypex",
+    "team": "GamerLegion",
+    "maps": 28,
+    "rounds": 619,
+    "kdDiff": 16,
+    "kd": 1.04,
+    "rating": 0.95
+  },
+  {
+    "name": "HooXi",
+    "team": "Astralis",
+    "maps": 26,
+    "rounds": 577,
+    "kdDiff": -77,
+    "kd": 0.81,
+    "rating": 0.94
+  },
+  {
+    "name": "HeavyGod",
+    "team": "G2",
+    "maps": 18,
+    "rounds": 384,
+    "kdDiff": 22,
+    "kd": 1.09,
+    "rating": 1.11
+  },
+  {
+    "name": "headtr1ck",
+    "team": "B8",
+    "maps": 28,
+    "rounds": 614,
+    "kdDiff": 5,
+    "kd": 1.01,
+    "rating": 0.94
+  },
+  {
+    "name": "hallzerk",
+    "team": "Passion UA",
+    "maps": 18,
+    "rounds": 395,
+    "kdDiff": -38,
+    "kd": 0.86,
+    "rating": 0.9
+  },
+  {
+    "name": "Grim",
+    "team": "Passion UA",
+    "maps": 18,
+    "rounds": 395,
+    "kdDiff": -30,
+    "kd": 0.9,
+    "rating": 0.95
+  },
+  {
+    "name": "Graviti",
+    "team": "3DMAX",
+    "maps": 19,
+    "rounds": 388,
+    "kdDiff": -31,
+    "kd": 0.89,
+    "rating": 0.94
+  },
+  {
+    "name": "frozen",
+    "team": "FaZe",
+    "maps": 23,
+    "rounds": 461,
+    "kdDiff": 26,
+    "kd": 1.09,
+    "rating": 1.12
+  },
+  {
+    "name": "flameZ",
+    "team": "Vitality",
+    "maps": 46,
+    "rounds": 1032,
+    "kdDiff": -24,
+    "kd": 0.97,
+    "rating": 1.09
+  },
+  {
+    "name": "FalleN",
+    "team": "FURIA",
+    "maps": 35,
+    "rounds": 774,
+    "kdDiff": -86,
+    "kd": 0.83,
+    "rating": 0.88
+  },
+  {
+    "name": "Ex3rcice",
+    "team": "3DMAX",
+    "maps": 19,
+    "rounds": 388,
+    "kdDiff": -17,
+    "kd": 0.94,
+    "rating": 0.99
+  },
+  {
+    "name": "esenthial",
+    "team": "B8",
+    "maps": 28,
+    "rounds": 614,
+    "kdDiff": -16,
+    "kd": 0.96,
+    "rating": 1.01
+  },
+  {
+    "name": "EliGE",
+    "team": "Liquid",
+    "maps": 19,
+    "rounds": 404,
+    "kdDiff": -31,
+    "kd": 0.9,
+    "rating": 0.97
+  },
+  {
+    "name": "dumau",
+    "team": "Legacy",
+    "maps": 26,
+    "rounds": 596,
+    "kdDiff": 20,
+    "kd": 1.05,
+    "rating": 1.07
+  },
+  {
+    "name": "donk",
+    "team": "Spirit",
+    "maps": 29,
+    "rounds": 685,
+    "kdDiff": 134,
+    "kd": 1.29,
+    "rating": 1.31
+  },
+  {
+    "name": "dgt",
+    "team": "paiN",
+    "maps": 32,
+    "rounds": 721,
+    "kdDiff": -5,
+    "kd": 0.99,
+    "rating": 1
+  },
+  {
+    "name": "device",
+    "team": "Astralis",
+    "maps": 21,
+    "rounds": 475,
+    "kdDiff": 1,
+    "kd": 1,
+    "rating": 0.95
+  },
+  {
+    "name": "dav1deuS",
+    "team": "paiN",
+    "maps": 32,
+    "rounds": 721,
+    "kdDiff": -36,
+    "kd": 0.93,
+    "rating": 0.98
+  },
+  {
+    "name": "controlez",
+    "team": "The MongolZ",
+    "maps": 24,
+    "rounds": 523,
+    "kdDiff": 1,
+    "kd": 1,
+    "rating": 1.06
+  },
+  {
+    "name": "chopper",
+    "team": "Spirit",
+    "maps": 26,
+    "rounds": 624,
+    "kdDiff": -99,
+    "kd": 0.76,
+    "rating": 0.84
+  },
+  {
+    "name": "Brollan",
+    "team": "MOUZ",
+    "maps": 24,
+    "rounds": 542,
+    "kdDiff": -62,
+    "kd": 0.83,
+    "rating": 0.88
+  },
+  {
+    "name": "broky",
+    "team": "FaZe",
+    "maps": 23,
+    "rounds": 461,
+    "kdDiff": 21,
+    "kd": 1.08,
+    "rating": 1
+  },
+  {
+    "name": "bodyy",
+    "team": "3DMAX",
+    "maps": 19,
+    "rounds": 388,
+    "kdDiff": -9,
+    "kd": 0.97,
+    "rating": 1.07
+  },
+  {
+    "name": "bLitz",
+    "team": "The MongolZ",
+    "maps": 24,
+    "rounds": 523,
+    "kdDiff": -43,
+    "kd": 0.88,
+    "rating": 0.92
+  },
+  {
+    "name": "biguzera",
+    "team": "paiN",
+    "maps": 34,
+    "rounds": 770,
+    "kdDiff": -9,
+    "kd": 0.98,
+    "rating": 1.05
+  },
+  {
+    "name": "BELCHONOKK",
+    "team": "PARIVISION",
+    "maps": 23,
+    "rounds": 527,
+    "kdDiff": -33,
+    "kd": 0.91,
+    "rating": 1
+  },
+  {
+    "name": "b1t",
+    "team": "Natus Vincere",
+    "maps": 21,
+    "rounds": 459,
+    "kdDiff": 31,
+    "kd": 1.11,
+    "rating": 1.06
+  },
+  {
+    "name": "apEX",
+    "team": "Vitality",
+    "maps": 46,
+    "rounds": 1032,
+    "kdDiff": -185,
+    "kd": 0.74,
+    "rating": 0.82
+  },
+  {
+    "name": "alex666",
+    "team": "B8",
+    "maps": 28,
+    "rounds": 614,
+    "kdDiff": -7,
+    "kd": 0.98,
+    "rating": 1
+  },
+  {
+    "name": "Aleksib",
+    "team": "Natus Vincere",
+    "maps": 21,
+    "rounds": 459,
+    "kdDiff": -47,
+    "kd": 0.84,
+    "rating": 0.93
+  },
+  {
+    "name": "910",
+    "team": "The MongolZ",
+    "maps": 24,
+    "rounds": 523,
+    "kdDiff": 72,
+    "kd": 1.22,
+    "rating": 1.12
+  }
+]

@@ -1,0 +1,14 @@
+2026/01/25-18:35:26.398 2b0c Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_elevenlabs.io_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/25-18:35:26.399 2b0c Recovering log #8
+2026/01/25-18:35:26.400 2b0c Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_elevenlabs.io_0.indexeddb.leveldb/000008.log 
+2026/01/25-18:35:26.401 2b0c Delete type=2 #7
+2026/01/25-18:35:26.472 3e70 Level-0 table #13: started
+2026/01/25-18:35:26.483 3e70 Level-0 table #13: 200668 bytes OK
+2026/01/25-18:35:26.491 3e70 Delete type=0 #8
+2026/01/25-18:35:26.491 2b0c Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 533 : 1
+2026/01/25-18:35:26.491 2b0c Compacting 1@0 + 1@1 files
+2026/01/25-18:35:26.497 2b0c Generated table #14@0: 241 keys, 27617 bytes
+2026/01/25-18:35:26.497 2b0c Compacted 1@0 + 1@1 files => 27617 bytes
+2026/01/25-18:35:26.502 2b0c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/25-18:35:26.502 2b0c Delete type=2 #13
+2026/01/25-18:35:26.503 2b0c Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 533 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)

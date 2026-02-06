@@ -1,0 +1,5 @@
+2026/01/30-19:44:44.843 2108 Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.netflix.com_0.indexeddb.leveldb since it was missing.
+2026/01/30-19:44:44.856 2108 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.netflix.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/30-20:49:12.760 2ef0 Level-0 table #5: started
+2026/01/30-20:49:12.795 2ef0 Level-0 table #5: 1771338 bytes OK
+2026/01/30-20:49:12.801 2ef0 Delete type=0 #3

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>CS Hi-Lo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <h1>CS Hi–Lo</h1>
+  <span class="author">by Tydan</span>
+</header>
+
+<main class="game">
+  <div class="info">
+    <div class="description">
+      Choose the player with the better stat.<br>
+      One mistake resets your streak.
+    </div>
+
+    <div class="category">WHO HAS BETTER/MORE: <span id="category">?</span></div>
+    <div class="scoreboard">
+      Score: <span id="score">0</span> |
+      <span id="streak">🔥 Streak: 0</span>
+    </div>
+  </div>
+
+  <div class="arena">
+    <div class="player-card" id="player1">
+      <div class="team-info">
+        <img id="flag1" class="flag" src="" alt="Flag">
+        <p id="team1">Team</p>
+        <img id="logo1" class="team-logo" src="" alt="Logo">
+      </div>
+      <img id="photo1" class="player-photo" src="" alt="Player Photo">
+      <h2 id="name1">Player</h2>
+      <div class="stat" id="stat1">?</div>
+    </div>
+
+    <div class="vs">
+      <img src="arrows.png" alt="Hi-Lo arrows" class="arrows" />
+    </div>
+
+    <div class="player-card" id="player2">
+      <div class="team-info">
+        <img id="flag2" class="flag" src="" alt="Flag">
+        <p id="team2">Team</p>
+        <img id="logo2" class="team-logo" src="" alt="Logo">
+      </div>
+      <img id="photo2" class="player-photo" src="" alt="Player Photo">
+      <h2 id="name2">Player</h2>
+      <div class="stat" id="stat2">?</div>
+    </div>
+  </div>
+</main>
+
+<script src="hilo.js"></script>
+</body>
+</html>

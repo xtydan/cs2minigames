@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧩 Who Doesn't Belong?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🧩 Who Doesn't Belong?</h1>
+            <p class="subtitle">Find the player who doesn't match the others!</p>
+            <div class="score">
+                Score: <span id="score">0</span> / <span id="total">0</span>
+            </div>
+            
+            <!-- Collapsible Legend -->
+            <details class="legend-container">
+                <summary class="legend-toggle">📖 Game Categories Legend</summary>
+                <div class="legend-content">
+                    <div class="legend-item">
+                        <strong>Same Country</strong> - Three players are from the same country (based on flag)
+                    </div>
+                    
+                    <div class="legend-item">
+                        <strong>Same Region</strong> - Three players are from the same geographical region:
+                        <ul>
+                            <li><strong>Scandinavia:</strong> Sweden, Denmark, Norway, Finland</li>
+                            <li><strong>CIS:</strong> Russia, Ukraine, Kazakhstan, Belarus</li>
+                            <li><strong>Western Europe:</strong> France, Belgium, Netherlands, Luxembourg, Switzerland</li>
+                            <li><strong>Southern Europe:</strong> Spain, Portugal, Italy, Greece</li>
+                            <li><strong>Central Europe:</strong> Germany, Austria, Poland, Czech Republic, Slovakia, Hungary</li>
+                            <li><strong>UK & Ireland:</strong> Great Britain, Ireland</li>
+                            <li><strong>Balkans:</strong> Serbia, Croatia, Bosnia, Bulgaria, Romania, Albania, Macedonia</li>
+                            <li><strong>North America:</strong> USA, Canada</li>
+                            <li><strong>South America:</strong> Brazil, Argentina, Chile, Peru, Uruguay</li>
+                            <li><strong>Asia:</strong> China, South Korea, Japan, Thailand, Vietnam, Indonesia, Malaysia, Singapore</li>
+                            <li><strong>Middle East:</strong> Turkey, Israel, Saudi Arabia, UAE</li>
+                            <li><strong>Oceania:</strong> Australia, New Zealand</li>
+                            <li><strong>Other:</strong> Rest of the countries</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="legend-item">
+                        <strong>Played in Same Team</strong> - Three players played in the same organization at some point in their career (not necessarily at the same time)
+                    </div>
+                    
+                    <div class="legend-item">
+                        <strong>Played Together</strong> - Three players were actual teammates in the same roster during the same time period
+                    </div>
+                    
+                    <div class="legend-item">
+                        <strong>Still Active</strong> - Three players are currently active (have "Present" as their last team period) vs three who are retired
+                    </div>
+                    
+                    <div class="legend-item">
+                        <strong>Major Winner</strong> - Three players won at least one CS:GO/CS2 Major championship vs three who never won a Major
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading players...</p>
+        </div>
+
+        <!-- Game Container -->
+        <div id="game-container" class="game-container" style="display: none;">
+            <!-- Hint -->
+            <div class="hint">
+                <p id="hint-text">3 players have something in common. Find the odd one out!</p>
+            </div>
+
+            <!-- Players Grid -->
+            <div class="players-grid" id="players-grid">
+                <!-- Players will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedback" class="feedback" style="display: none;">
+                <p id="feedback-message"></p>
+                <button id="next-btn" class="next-btn">Next Round →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

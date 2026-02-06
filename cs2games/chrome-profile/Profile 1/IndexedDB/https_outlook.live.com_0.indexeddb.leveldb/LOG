@@ -1,0 +1,15 @@
+2026/01/29-16:30:09.892 1f50 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_outlook.live.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/29-16:30:09.892 1f50 Recovering log #4
+2026/01/29-16:30:09.893 1f50 Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_outlook.live.com_0.indexeddb.leveldb/000004.log 
+2026/01/29-16:30:13.517 1eb4 Level-0 table #8: started
+2026/01/29-16:30:13.524 1eb4 Level-0 table #8: 190 bytes OK
+2026/01/29-16:30:13.529 1eb4 Delete type=0 #4
+2026/01/29-16:30:13.530 1eb4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/01/29-16:30:13.530 1eb4 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 14 : 1
+2026/01/29-16:30:13.530 1eb4 Compacting 1@1 + 1@2 files
+2026/01/29-16:30:13.539 1eb4 Generated table #9@1: 12 keys, 449 bytes
+2026/01/29-16:30:13.539 1eb4 Compacted 1@1 + 1@2 files => 449 bytes
+2026/01/29-16:30:13.546 1eb4 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/01/29-16:30:13.546 1eb4 Delete type=2 #5
+2026/01/29-16:30:13.546 1eb4 Delete type=2 #8
+2026/01/29-16:30:13.547 1eb4 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 14 : 1 .. (end); will stop at (end)

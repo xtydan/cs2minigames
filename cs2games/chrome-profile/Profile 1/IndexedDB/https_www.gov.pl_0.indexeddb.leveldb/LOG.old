@@ -1,0 +1,7 @@
+2026/01/29-11:35:42.166 1f50 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.gov.pl_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/29-11:35:42.167 1f50 Recovering log #6
+2026/01/29-11:35:42.167 1f50 Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.gov.pl_0.indexeddb.leveldb/000006.log 
+2026/01/29-11:35:42.324 2278 Level-0 table #11: started
+2026/01/29-11:35:42.333 2278 Level-0 table #11: 803 bytes OK
+2026/01/29-11:35:42.339 2278 Delete type=0 #6
+2026/01/29-11:35:42.339 1f50 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

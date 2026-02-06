@@ -1,0 +1,32 @@
+[
+    {
+    "title": "TeamsGuesser",
+    "description": "Guess player based off teams he played for",
+    "path": "teamsguesser/index.html",
+    "image": "images/teamsg.png"
+  },
+  {
+    "title": "CS Guess Who",
+    "description": "Reveal clues and guess the CS2 pro player",
+    "path": "cs2guesswho/index.html",
+    "image": "images/guesswho.png"
+  },
+  {
+    "title": "CS Hi-Lo",
+    "description": "Guess which player has better stats",
+    "path": "csgo-hi-lo/index.html",
+    "image": "images/hilo.png"
+  },
+  {
+    "title": "CS Memory",
+    "description": "Match CS2 players cards",
+    "path": "cs-memory/index.html",
+    "image": "images/memory.png"
+  },
+  {
+    "title": "Who doesn't belong",
+    "description": "Find the player who doesn't match the others!",
+    "path": "whodoesntbelong/index.html",
+    "image": "images/wdb.png"
+  }
+]

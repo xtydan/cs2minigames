@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory CS2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="topbar">
+    <h1>Memory CS2</h1>
+    <div class="author">by Tydan</div>
+  </div>
+
+
+  <div class="game">
+    <div class="options">
+      <label for="numCards">Select amount of pictures:</label>
+      <select id="numCards"></select>
+      <button id="startBtn">Start</button>
+    </div>
+
+    <div id="scoreboard">Moves: 0</div>
+    <div id="timer">Time: 0s</div>
+
+    <div id="grid" class="grid"></div>
+  </div>
+
+
+  <div id="endScreen" class="end-screen" style="display:none;">
+    <div class="end-content">
+      <h2>Congratulations!</h2>
+      <p id="finalMoves"></p>
+      <p id="finalTime"></p>
+      <button id="restartBtn">Play again</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

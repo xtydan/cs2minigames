@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HLTV Guess Who</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>HLTV Guess Who</h1>
+    </header>
+
+    <div class="hint">
+      <p>Guess the player based on revealed clues. Type a name and click Guess.</p>
+    </div>
+
+    <div class="input-section">
+      <div class="input-wrapper">
+        <input type="text" id="playerInput" placeholder="Enter player name...">
+        <div id="autocomplete-list" class="autocomplete-items"></div>
+      </div>
+      <button id="guessBtn" class="guess-btn">Guess</button>
+    </div>
+
+    <div id="tilesContainer" class="players-grid tiles-container"></div>
+
+    <div id="endGame" class="feedback end-game hidden">
+      <h2>Game Over!</h2>
+      <p id="finalScore"></p>
+      <button id="restartBtn" class="next-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

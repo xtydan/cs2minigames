@@ -1,0 +1,14 @@
+2026/01/29-12:59:43.292 1f50 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.flashscore.pl_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/29-12:59:43.293 1f50 Recovering log #21
+2026/01/29-12:59:43.293 1f50 Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.flashscore.pl_0.indexeddb.leveldb/000021.log 
+2026/01/29-12:59:43.294 1f50 Delete type=2 #19
+2026/01/29-12:59:43.425 2278 Level-0 table #26: started
+2026/01/29-12:59:43.437 2278 Level-0 table #26: 662 bytes OK
+2026/01/29-12:59:43.442 2278 Delete type=0 #21
+2026/01/29-12:59:43.443 1f50 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 140 : 1
+2026/01/29-12:59:43.443 1f50 Compacting 1@0 + 1@1 files
+2026/01/29-12:59:43.451 1f50 Generated table #27@0: 11 keys, 653 bytes
+2026/01/29-12:59:43.452 1f50 Compacted 1@0 + 1@1 files => 653 bytes
+2026/01/29-12:59:43.455 1f50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/29-12:59:43.456 1f50 Delete type=2 #26
+2026/01/29-12:59:43.457 1f50 Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 140 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

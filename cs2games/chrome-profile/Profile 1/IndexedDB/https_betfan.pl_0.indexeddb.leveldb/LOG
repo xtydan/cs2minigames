@@ -1,0 +1,6 @@
+2026/02/02-13:52:58.185 1c58 Creating DB C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_betfan.pl_0.indexeddb.leveldb since it was missing.
+2026/02/02-13:52:58.202 1c58 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_betfan.pl_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/02-13:53:36.826 3200 Level-0 table #5: started
+2026/02/02-13:53:36.831 3200 Level-0 table #5: 791 bytes OK
+2026/02/02-13:53:36.838 3200 Delete type=0 #3
+2026/02/02-13:53:36.838 3200 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

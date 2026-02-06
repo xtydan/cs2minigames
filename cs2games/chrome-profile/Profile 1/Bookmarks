@@ -1,0 +1,179 @@
+{
+   "checksum": "ad5fa0be01619aa33e1fb38a76aab0ca",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13231767738400596",
+            "date_last_used": "13406852660985987",
+            "guid": "2f449887-efcd-41de-9420-fe96e3043bb9",
+            "id": "8",
+            "name": ".",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/11tbQ7ZF0tAM0d7mTltdELv722co1vWl5"
+         }, {
+            "date_added": "13222535005460069",
+            "date_last_used": "0",
+            "guid": "e8fa1be5-618b-4e7d-a9b3-98d7bc92c9bc",
+            "id": "9",
+            "name": "",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13288801887336014",
+            "date_last_used": "0",
+            "guid": "a1e5c142-8a8a-4fae-bda2-ec3f9f886c22",
+            "id": "10",
+            "name": "Matches",
+            "type": "url",
+            "url": "https://www.hltv.org/matches"
+         }, {
+            "date_added": "13264176624367245",
+            "date_last_used": "13414419380441637",
+            "guid": "23665a64-aa19-42a7-8ca0-5e25d60333f3",
+            "id": "11",
+            "name": "Fantasy",
+            "type": "url",
+            "url": "https://www.hltv.org/fantasy"
+         }, {
+            "date_added": "13364233105094690",
+            "date_last_used": "13379344276555033",
+            "guid": "a2054ccc-f42f-4a99-b8c9-0842e8b2039e",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": ".",
+            "type": "url",
+            "url": "https://www.flickr.com/photos/194363022@N04/with/51665829300"
+         }, {
+            "date_added": "13396459214118121",
+            "date_last_used": "0",
+            "guid": "f6042ba2-40e2-4c7b-9c54-8317c354dc69",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Kompedium | Kompendium Wiedzy Delivery - Dexterawka",
+            "type": "url",
+            "url": "https://kurierpedia.pl/docs/"
+         }, {
+            "date_added": "13402675727293478",
+            "date_last_used": "13412295357189763",
+            "guid": "9e56e104-d75d-47da-b433-b3962dd45f9a",
+            "id": "14",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "eaplaypro for fc 26 : r/EASportsFC",
+            "type": "url",
+            "url": "https://www.reddit.com/r/EASportsFC/comments/1mqqpvi/eaplaypro_for_fc_26/"
+         }, {
+            "date_added": "13404422762171615",
+            "date_last_used": "0",
+            "guid": "ea28e383-e45b-49be-9e76-cf8f9d8827c3",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Arkusz kalkulacyjny bez tytułu - Arkusze Google",
+            "type": "url",
+            "url": "https://docs.google.com/spreadsheets/d/1uYVsF4XzswnHh6oC1NmA1xUtbxfd1skoP9YuKct0z9s/edit?gid=53558719#gid=53558719"
+         }, {
+            "date_added": "13409788272173712",
+            "date_last_used": "13409957989975736",
+            "guid": "e132545f-e544-4050-8c3b-f4665ca958c8",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Does anybody have a good discount for Kinguin? : r/Kinguin",
+            "type": "url",
+            "url": "https://www.reddit.com/r/Kinguin/comments/16r59pr/does_anybody_have_a_good_discount_for_kinguin/"
+         }, {
+            "date_added": "13413818021004806",
+            "date_last_used": "0",
+            "guid": "41e7437c-8e6e-4668-8115-572f2678edbd",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Uniknięcie pierwszego bana za smurfing z nowym kontem - Counter-Strike - Dyskusje / problemy - CSHacked.pl - czity, bugi, hacki, boty do gier",
+            "type": "url",
+            "url": "https://www.cshacked.pl/unikni%C4%99cie-pierwszego-bana-za-smurfing-z-nowym-kontem-t188706/"
+         }, {
+            "date_added": "13413933780823494",
+            "date_last_used": "13414720581429391",
+            "guid": "6d0f1aaf-ac9b-4fcc-a314-313df7a500eb",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "superandybean (u/superandywaffle) - Reddit",
+            "type": "url",
+            "url": "https://www.reddit.com/user/superandywaffle/"
+         } ],
+         "date_added": "13413118733761884",
+         "date_last_used": "0",
+         "date_modified": "13414353165304426",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Pasek zakładek",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13163689959295414",
+            "date_last_used": "0",
+            "guid": "3ca5c839-0d63-4240-b086-5360a94dd113",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13171629904544011"
+            },
+            "name": "MobiDziennik - Dziennik elektroniczny - Szkoła Podstawowa im.Henryka Sienkiewicza w Zespole Szkolno-Przedszkolnym w Hecznarowicach",
+            "type": "url",
+            "url": "https://sphecznarowice.mobidziennik.pl/dziennik"
+         }, {
+            "date_added": "13358212347784814",
+            "date_last_used": "0",
+            "guid": "8953e049-570f-40f1-95a6-83428b53b376",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Jak robimy Fryto w bułce . U Szybkiego - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=y2q38c6QUOc&ab_channel=Uszybkiego"
+         } ],
+         "date_added": "13413118733761884",
+         "date_last_used": "0",
+         "date_modified": "13358212347784814",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Inne zakładki",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13318002194947171",
+            "date_last_used": "0",
+            "guid": "45c50c17-5f77-4618-8578-1ae97f1d59b1",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Egzamin praktyczny - kolejność wykonywania zadań egzaminacyjnych. - Nauka jazdy Janusz Stasiaczek",
+            "type": "url",
+            "url": "https://januszs-prawojazdy.pl/egzamin-praktyczny/"
+         } ],
+         "date_added": "13413118733761884",
+         "date_last_used": "0",
+         "date_modified": "13318002194947171",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Zakładki na komórce",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CnAKUAiIgQISSiAAkgE2CjQKDmNocm9tZV9zeW5jX2JtEgU1MSFibRoSCf+C5KUGSgYAEf+C5KUGSgYAKWMs5aUGSgYA6gEMCOGBj8wGELiQj9cCEgAqGFAyckMxc2djMmxNTU0xM3FTTVB2dVE9PUgDEu4BCBAS6QEKHGRHbjIrbkp1anliMDJIeFRFWGN5SU42NGdWaz0SZlo6QURxdEFaemMxN0lheXpBOXBFM3VQNkVXNW9pcFpCdWZYNlhlYmhsWmpBSlpBUnlyNGdkVk5wanFNMWMzYnNWUHZFYUtFdzhUakRrSm5mZEM0SEVuR2RZV3hFVnZoaExVNGc9PRgAIAAoADDx++GfrbaRAziv7NCnsDNAr+zQp7AzShxxSHlJNWg3R0xkYkt3d0hZMHZkbnd5RTJ2ZGc9WiEiH////29wOHQxZjl5akJDbkFDU3ROMDk2QnkxekxkOD1lUIBwHRLuAQgPEukBChxyMldhWUViR2R0SGUveTNobVBnYVcxYnVYaWs9EmZaOkFEcXRBWnpjMTdJYXl6QTlwRTN1UDZFVzVvaXBBQW1TODlWN2pwclFnNm83MktJUTF4YXpzQlNJdG9nVWZkQ2REL2pQZExrVkF6Y0hZME9FU1U3VnhwOUZPdU1jeTVLeXdRPT0YACAAKAAw8cOGi6GVkAM4u42UqZwzQLuNlKmcM0ocZmMzVmVnSzh3WEExNmRwTmNIdUZkQ3dqNGY0PVohIh////4rQW1CUHpudHY2bW9BS3Y5bEpRNVQ3OUJZczQ9ZYenKZsS7gEIDRLpAQocOVRvaEd5eEZoMHA5SVQrVGNUQmhjRWJSQmg4PRJmWjpBRHF0QVp6YzE3SWF5ekE5cEUzdVA2RVc1b2lwT1N5RGptNDhhTFNpeEMvL3dMUkN1bUdxR2svaUpiSVNiM1FYMFFvUFRDT1A4cUZ4Z0pYSGN1TmllRUdNUEtPMnFKOGRGUT09GAAgACgAMMjtlfnYjY8DOKfa69P+MkCn2uvT/jJKHEUzS2pOd1dUSHhHVFNzcVFqeVBvaFU5QjJxTT1aISIf///7dFA5QnFEcitBcEkyYkhYcjVCZFRPdXdsZlBFPWWnwrJwEq4CCAsSqQIKHHhFb3lwZ1Y3MWwvTFNqSzEzWFNvQlN6MnZ5UT0SpgFaOkFEcXRBWndCcTdvUnJRZEkzS0J5SE96ajMvN25INWVmdUxxdzcwSFRDcEU3ZVh5cGlleXNOWkplSXZ4VHNQT2xqeWtSbGxoRWpPWHJSRjRNdnJQOUQ1MUZraEh1MExWekN6c1lDdTBjdUEwNWsrR2RTL2hKSG90amxaN2NJSERKb0ZHMHRqR1JkdWdlb0tWOElNR1MxU3FtM0hqNG5OSEJQdz09GAAgACgAMKfczaiOjY8DOO+Vy+6RL0DvlcvukS9KHGtkV2JYRGYrSWxGSVI2NjRoaFNXb2JCV2NxVT1aICIe//wwQS9tby9aV29iWXpud1lsbCtSdkxLbUpGVEU9ZTcCMIUSrQIICBKoAgocWXh3RWhxdmg3TDBMTDE0KytIVkpCNDZrQS80PRKmAVo6QURxdEFad0JxN29SclFkSTNLQnlIT3pqMy83bkg1ZWZ1THF3NzBIVENwRTdlWHlwaWIyaG5Lcmx0M0l5d0RVNm9neFRFM29pUWNkYnc0RzNUSlg5WFh1Vmh4cTNtazMySmFhRHNVcE43S3RNendiaStYdXB1SU84MzEvZGx3TjRUUGU0MHo1UUhjalZmZEo3bGErTFJWZHdtZGRyemlrTWV3PT0YACAAKAAwwrGoj/3bkAM4zuDpkJkuQM7g6ZCZLkoceUpsYUUwbUFFSmpYUnFRa0NVVVQ1c2ZPK2lZPVofIh36K2RBSEhhSldmK25jRm1qcG5wRzNVVjJjbWFrPWVqZO4SEqsBCAESpgEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0STlo6QURxdEFaemQ5c09nK3VUeFA2VWJwbWl3VDkrblN0dW1ScGd0enJaRnhHTW1EL3M1VXVNcE0rYnUwdWk0OGMzM1JWenVmQUhZWWg5LxgAIAAoADDmpdDVrJKSAzgAQABKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEusBCAUS5gEKHEVQODVyM1QvZHlEV21XNFV6TmpHSENLQXZZdz0SZlo6QURxdEFaemMxN0lheXpBOXBFM3VQNkVXNW9pcDczaWlJZHNJYTBkQjJjanIrdHZWbEU3UVBCVmJ4L01PbXRvdWRJbTloYU1WZ1FIT1lOUEJrVkZBRHZyS3VDREp1dzlrUFE9PRgAIAAoADDfkuXri8L8AjiFpM+w2jBAhaTPsNowShx5VXArZ05UaXJ6eElZeERxZlZ4NndKSzU1MVU9Wh4iHFdnbGdnKzJuQjAxZ1ppM3lvdTFJbUZJdVN3ND1lAAAAABLuAQgOEukBChxVZEJtNFBLQWJPN291RGNDTWtCRDFYTGxVbmc9EmZaOkFEcXRBWnpjMTdJYXl6QTlwRTN1UDZFVzVvaXBwUERXMnNlbmh6NGhJZ2F4YmhoY0VpSFhWcFJuWU51TmVEcUF4ZVNLNWpyb2JPVWdKdzhYSEYrVHJUMTYvMkNzWklzNDVBPT0YACAAKAAwxJiLwLD6kQM4vseN6JUzQL7HjeiVM0ocS1lRSWd5QTRiaFVYanFoS2lNNjlkZjV1MUpFPVohIh////1QT29xc2d0bHhrMW9GZnBialBLTmdLd3V1OGM9ZVCAcB0SrAIIBhKnAgocNzByTERvenlGb3hwa1dCVWo4N0Y3aFlNQ0RZPRKmAVo6QURxdEFad0JxN29SclFkSTNLQnlIT3pqMy83bnR3S2I2U1ZwQk1RK0dma1VvSUtoUzBBUXY2SnhpWHlxQUUxYlF2RllMNDdwS2RMS0lIR1h5RjBoc3ZPUjNRckVscUxCRkxUYTZwREhYRzk4b1d3ckNFVjNqcXFDdmcxc2tmV1NYNVhsYStZY05PRWx4WTBrbU5aRHAzdk5ZR0JkcGlXdlhRPT0YACAAKAAwsOfqzrvW9AI4/+7nwpssQP/u58KbLEocMVJHbmE1UUEzNUlscHB0ZG81YWcvYVRFR0NvPVoeIhxONXZpeVhscklvQXFobE9XVCtYWjU3SDBUSHM9ZdbWUtYS7gEIDBLpAQocdkV2VGpNRVZnRU4xUnNoTHcvTU13cUpScmRRPRJmWjpBRHF0QVp6YzE3SWF5ekE5cEUzdVA2RVc1b2lwa2F2NjVtTzZLSzJTWEFzUjM3OFdQVWdCdms4a3RyZ3BRcCt2RmM2YmJLZ0JkU0dWOTFBQzhlR1FNaytKK3BtNWtnc05tZz09GAAgACgAMM3XqNvpwIoDOMaNns2GMkDGjZ7NhjJKHEJ1dUJ4UzdqTEVnbC9waC9tZTJJeStQUEFPaz1aISIf///vd0lJdHlkZ3RiNmFlMEZVQlA1R251TGwvc2FvPWU/W7xIEq0CCAkSqAIKHGRTU25vc29FN25WVDFOb1RtYzFiQUU0dU05bz0SpgFaOkFEcXRBWndCcTdvUnJRZEkzS0J5SE96ajMvN25INWVmdUxxdzcwSFRDcEU3ZVh5cGlRSUt3ZExrVlFIRERBTVZaYUZTNkhHcm95TUcrWGdtV2JkQUVBWUdiV2RrV2Y0SzRUTEJadXBmWnZrbGRReUZpdlg5bzBocUZ0S1V3Qkt5bFFmU3duU0pZaHVDQ3VkSjhXQjN4NDBKb29JS3pHODJ4UT09GAAgACgAMOXrr7qPho8DOJS6qN72LUCUuqje9i1KHEZWbUJoWjdyN2VXL2ZXNGFwQ2FEaG1aVFZ3MD1aHyId/DE0VWppK2hISEtTUTYvbW9TNnY4ajZhM2lUbz1lQ/htgBLDAQgCEr4BChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EmZaOkFEcXRBWnhIQ1lOb1JHUlBnTGV0Yk53MGtZNXZHTVhENWlaS04rSmp6MlovdHpzN0dpd01RcGxTWXhnTk45OXhKdUhIRkNBVG1hRjlheHdWbm4rSGlYOGdoTVVEc1liNnhRPT0YACAAKAAw5qXQ1aySkgM4AEAAShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABLrAQgHEuYBChxFSk5uY2tXR1FrbHdEYUxJZHd4c1JHQkQ5TEk9EmZaOkFEcXRBWnpjMTdJYXl6QTlwRTN1UDZFVzVvaXBHdzJDS010NkJWWXBpWHB2SlJpUjl1WVFWN0lXKzQ5MWlEYkRUemgvakpYLzFQVFRrL0pYUTRyRFlKcFBXdG13Z2RTeVJRPT0YACAAKAAw2vnTwsfejwM4iZ+olvAxQImfqJbwMUocdGI4cTZwUXZIRytwUm90cmkyNmhGUTZvdnRRPVoeIhx4S1dUSnc3bXdUNEJCeU5xWXpSZ1NncmFQcWc9ZUP4bYAS7wEIEhLqAQocR1YwdmpmT2hSZ1A2NFh3ekVYZmtkNmJwL04wPRJmWjpBRHF0QVp6YzE3SWF5ekE5cEUzdVA2RVc1b2lwaWFsUUxib09pNUZjMnI1YTErTjFIS1c2aTBkMm1LSUwvb0JVTVU2MFhTMDVFQWpSd0hYeWFUcjdtc2cvMTFCSHQvRnlXZz09GAAgAigCMIjTx87ZppIDOI2Zlam/M0CgmZWpvzNKHDJkLzUyWWxzSDhaVUtSalZkcTNlYUJMZkpVaz1aIiIg////t0xJRGR2bE9LZDY0MGtCenlTN3pRZmxXdEZXRT1lSetVthLtAQgKEugBChxCSkcwNGd5N0FGRnZOMmhhUy9xUTVmYmE4aEU9EmZaOkFEcXRBWnpjMTdJYXl6QTlwRTN1UDZFVzVvaXBGRWtyVitDSENMOFdIaGR1R0F4c0FPdnBFTEdsKzZTUWptT2p6Z2V3VDlGNVBlQjBPUit0LzllWlRKdC91WFh5WnNJMVN3PT0YACAAKAAwp9zNqI6NjwM46PjpzO0vQOj46cztL0ocOW1DQ3h4cWtPNWQxQ1hVYXhCYXNpTkIvakljPVogIh7/+mo0SklJS09PMDJ4MEluL2g4SmR6VHVjUXR6dz1lNwIwhRLvAQgUEuoBChxaK1ZFRHRlMU5zcVZ6b3lJVys5akRwd3pIOWs9EmZaOkFEcXRBWnpjMTdJYXl6QTlwRTN1UDZFVzVvaXBuZ2EramZqam92SnkzWE9MeTNGWC9VdzMyTGZHWG0zcmRlaGJvYnlxYW1RSVdvaUhwZTFUVXY1dVdGZ2FEUXhXbS9nVnBRPT0YACACKAIwl5/D7YiqkgM4186u4L8zQOrOruC/M0ocZlZNZDI3TVJXTkE2TTUrS0JYOFJyRnlrd1hjPVoiIiD////bSmxBRy9rMGZEUVlpYzFPSDBBNjkydHRNMlE4PWVQgHAdEsMBCAMSvgEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SZlo6QURxdEFaemdnMUpZT2lmTkc5and4M0NHSXRldnFxYkdxS2dwSTFnSVR3VUR4emo1NXY0OVdmY1NSWURFRmJ2TUI3OTNCT0ZHWjN5ZU5odmdsMm5ROGVPdWhCKzBkQ2xnbGc9PRgAIAAoADDmpdDVrJKSAzgAQABKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAMAE4AA==",
+   "version": 1
+}

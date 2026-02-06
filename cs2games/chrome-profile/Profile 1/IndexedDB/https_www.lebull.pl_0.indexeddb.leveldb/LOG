@@ -1,0 +1,13 @@
+2026/01/24-15:28:28.034 1470 Reusing MANIFEST C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.lebull.pl_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/24-15:28:28.035 1470 Recovering log #7
+2026/01/24-15:28:28.035 1470 Reusing old log C:\Users\tymek\AppData\Local\Google\Chrome\User Data\Profile 1\IndexedDB\https_www.lebull.pl_0.indexeddb.leveldb/000007.log 
+2026/01/24-15:28:28.049 293c Level-0 table #11: started
+2026/01/24-15:28:28.053 293c Level-0 table #11: 1396 bytes OK
+2026/01/24-15:28:28.058 293c Delete type=0 #7
+2026/01/24-15:28:28.059 450 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 169 : 1
+2026/01/24-15:28:28.059 450 Compacting 1@0 + 1@1 files
+2026/01/24-15:28:28.061 450 Generated table #12@0: 68 keys, 1454 bytes
+2026/01/24-15:28:28.061 450 Compacted 1@0 + 1@1 files => 1454 bytes
+2026/01/24-15:28:28.064 450 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/24-15:28:28.065 450 Delete type=2 #11
+2026/01/24-15:28:28.065 450 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 169 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

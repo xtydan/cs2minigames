@@ -1,0 +1,11 @@
+{
+  "name": "csgo-hi-lo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "fetchTop200Players.js",
+  "scripts": {},
+  "dependencies": {
+    "hltv": "^2.24.0",
+    "hltv-api": "^3.0.3"
+  }
+}
