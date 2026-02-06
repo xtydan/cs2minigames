@@ -11,6 +11,13 @@
     "path": "cs2guesswho/index.html",
     "image": "images/guesswho.png"
   },
+    ,
+  {
+    "title": "Who doesn't belong",
+    "description": "Find the player who doesn't match the others!",
+    "path": "whodoesntbelong/index.html",
+    "image": "images/wdb.png"
+  }
   {
     "title": "CS Hi-Lo",
     "description": "Guess which player has better stats",
@@ -22,11 +29,5 @@
     "description": "Match CS2 players cards",
     "path": "cs-memory/index.html",
     "image": "images/memory.png"
-  },
-  {
-    "title": "Who doesn't belong",
-    "description": "Find the player who doesn't match the others!",
-    "path": "whodoesntbelong/index.html",
-    "image": "images/wdb.png"
   }
 ]
