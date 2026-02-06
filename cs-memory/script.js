@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const restartBtn = document.getElementById("restartBtn");
 
   // Allowed numbers of cards
-  const allowedNumbers = [8, 10, 12, 15];
+  const allowedNumbers = [8, 10, 12];
   allowedNumbers.forEach(num => {
     const option = document.createElement("option");
     option.value = num;
