@@ -1,6 +1,0 @@
-- [x] Modify index.html to add database selection UI (buttons for Easy/Hard, Start Game button) and hide game elements initially.
-- [x] Update script.js to remove automatic fetch, add difficulty button listeners and start button listener to load selected JSON and start game, then show game elements.
-- [x] Add back buttons for navigation (Back to Main, Change Difficulty).
-- [x] Style the new buttons to match the site theme.
-- [x] Add event listeners for back buttons.
-- [x] Test the changes to ensure selection works and game loads correctly.
