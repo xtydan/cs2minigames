@@ -2,17 +2,25 @@ let playersData = [];
 let currentLevel = null;
 let targetPlayer = null;
 let attemptsLeft = 5;
+let currentDifficulty = 'easy'; // default to easy
 
+const setupSection = document.getElementById('setupSection');
 const levelSelection = document.getElementById('levelSelection');
 const gamePanel = document.getElementById('gamePanel');
 const tilesContainer = document.getElementById('tiles');
 const backBtn = document.getElementById('backBtn');
+const backToMainBtn = document.getElementById('backToMainBtn');
+const changeDifficultyBtn = document.getElementById('changeDifficultyBtn');
 const levelInfo = document.getElementById('levelInfo');
 const playerInput = document.getElementById('playerInput');
 const guessBtn = document.getElementById('guessBtn');
 const autocompleteList = document.getElementById('autocomplete-list');
 const attemptsLeftEl = document.getElementById('attemptsLeft');
 const endGameEl = document.getElementById('endGame');
+const easyBtn = document.getElementById('easyBtn');
+const hardBtn = document.getElementById('hardBtn');
+const startBtn = document.getElementById('startBtn');
+const backToDifficultyBtn = document.getElementById('backToDifficultyBtn');
 
 const levelDescriptions = {
   easy: 'You see teams and dates, guess the player!',
@@ -21,8 +29,9 @@ const levelDescriptions = {
 };
 
 // fetch players.json and normalize structure to what the game expects
-async function loadPlayers() {
-  const response = await fetch('./players.json');
+async function loadPlayers(difficulty = 'easy') {
+  const fileName = difficulty === 'easy' ? 'easyPlayers.json' : 'hardPlayers.json';
+  const response = await fetch(`./${fileName}`);
   const rawPlayers = await response.json();
 
   // players.json uses "teamHistory", but the game expects "teams"
@@ -154,6 +163,26 @@ function checkGuess() {
   }
 }
 
+// DIFFICULTY SELECTION
+easyBtn.addEventListener('click', () => {
+  easyBtn.classList.add('selected');
+  hardBtn.classList.remove('selected');
+  currentDifficulty = 'easy';
+});
+
+hardBtn.addEventListener('click', () => {
+  hardBtn.classList.add('selected');
+  easyBtn.classList.remove('selected');
+  currentDifficulty = 'hard';
+});
+
+// START GAME
+startBtn.addEventListener('click', async () => {
+  await loadPlayers(currentDifficulty);
+  setupSection.classList.add('hidden');
+  levelSelection.classList.remove('hidden');
+});
+
 // LEVEL SELECTION
 document.querySelectorAll('.level-tile').forEach(tile => {
   tile.addEventListener('click', () => {
@@ -163,11 +192,41 @@ document.querySelectorAll('.level-tile').forEach(tile => {
   });
 });
 
+// BACK TO MAIN BUTTON
+backToMainBtn.addEventListener('click', () => {
+  window.location.href = '../index.html';
+});
+
+// CHANGE DIFFICULTY BUTTON
+changeDifficultyBtn.addEventListener('click', () => {
+  gamePanel.classList.add('hidden');
+  setupSection.classList.remove('hidden');
+  // Reset game state
+  currentLevel = null;
+  targetPlayer = null;
+  attemptsLeft = 5;
+  playerInput.value = '';
+  endGameEl.classList.add('hidden');
+  playerInput.disabled = false;
+  guessBtn.disabled = false;
+});
+
 // BACK BUTTON
 backBtn.addEventListener('click', () => {
   gamePanel.classList.add('hidden');
   levelSelection.classList.remove('hidden');
   document.querySelectorAll('.level-tile').forEach(t => t.classList.remove('active'));
+});
+
+// BACK TO DIFFICULTY BUTTON
+backToDifficultyBtn.addEventListener('click', () => {
+  levelSelection.classList.add('hidden');
+  setupSection.classList.remove('hidden');
+});
+
+// GO BACK BUTTON
+goBackBtn.addEventListener('click', () => {
+  window.location.href = '../index.html';
 });
 
 // AUTOCOMPLETE EVENTS

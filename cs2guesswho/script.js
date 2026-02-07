@@ -9,7 +9,7 @@ const CATEGORIES = [
   { key: "age", label: "Age" },
   { key: "active", label: "Active" },
   { key: "pastTeam", label: "Random Past Team" },
-  { key: "prizeMoney", label: "Prize Money" }
+  { key: "majorWins", label: "Major Wins" }
 ];
 const maxPoints = CATEGORIES.length;
 
@@ -20,6 +20,12 @@ const endGame = document.getElementById("endGame");
 const finalScore = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
 const autocompleteList = document.getElementById("autocomplete-list");
+const startBtn = document.getElementById("startBtn");
+const difficultySelect = document.getElementById("difficultySelect");
+const setupSection = document.getElementById("setupSection");
+const gameSection = document.getElementById("gameSection");
+const backToMainBtn = document.getElementById("backToMainBtn");
+const changeDifficultyBtn = document.getElementById("changeDifficultyBtn");
 
 function getPlayerValue(p, key) {
   if (key === "active") {
@@ -35,18 +41,42 @@ function getPlayerValue(p, key) {
     if (!otherTeams.length) return "no other teams";
     return otherTeams[Math.floor(Math.random() * otherTeams.length)];
   }
+  if (key === "team") {
+    const stats = p.stats ?? p;
+    const team = stats[key] ?? p[key];
+    return team || "no current team";
+  }
   const stats = p.stats ?? p;
   return stats[key] ?? p[key] ?? "?";
 }
 
-// Load player data
-fetch("players.json")
-  .then(res => res.json())
-  .then(data => {
-    players = Array.isArray(data) ? data : (data.players ?? []);
-    startGame();
-  })
-  .catch(() => alert("Failed to load player data!"));
+// Difficulty selection
+let selectedDifficulty = "easyPlayers.json";
+
+easyBtn.addEventListener("click", () => {
+  selectedDifficulty = "easyPlayers.json";
+  easyBtn.classList.add("selected");
+  hardBtn.classList.remove("selected");
+});
+
+hardBtn.addEventListener("click", () => {
+  selectedDifficulty = "hardPlayers.json";
+  hardBtn.classList.add("selected");
+  easyBtn.classList.remove("selected");
+});
+
+// Start button event listener
+startBtn.addEventListener("click", () => {
+  fetch(selectedDifficulty)
+    .then(res => res.json())
+    .then(data => {
+      players = Array.isArray(data) ? data : (data.players ?? []);
+      setupSection.classList.add("hidden");
+      gameSection.classList.remove("hidden");
+      startGame();
+    })
+    .catch(() => alert("Failed to load player data!"));
+});
 
 function startGame() {
   currentPlayer = players[Math.floor(Math.random() * players.length)];
@@ -169,6 +199,25 @@ function showEndGame(won, points) {
   `;
   endGame.classList.remove("hidden");
 }
+
+// GO BACK BUTTON
+goBackBtn.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+
+// Back to Main
+backToMainBtn.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+
+// Change Difficulty
+changeDifficultyBtn.addEventListener("click", () => {
+  setupSection.classList.remove("hidden");
+  gameSection.classList.add("hidden");
+  playerInput.value = "";
+  autocompleteList.innerHTML = "";
+  autocompleteList.style.display = 'none';
+});
 
 // Restart
 restartBtn.addEventListener("click", startGame);

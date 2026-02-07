@@ -9,10 +9,29 @@
 
 <header class="topbar">
   <h1>CS Hi–Lo</h1>
-  <span class="author">by Tydan</span>
 </header>
 
-<main class="game">
+<div id="setupSection">
+  <div class="hint">
+        <p>Choose the player with the better stat.</p>
+        <p>Select difficulty and start the game.</p>
+        <p>The easy database contains 150 popular players, while the hard database has nearly 1400 players.</p>
+        <p>Both databases include only players with 300+ maps played since 2016.</p>
+      </div>
+  <div class="input-section">
+    <button id="goBackBtn" class="back-btn">Go Back</button>
+    <button id="easyBtn" class="difficulty-btn selected">Easy</button>
+    <button id="hardBtn" class="difficulty-btn">Hard</button>
+    <button id="startBtn" class="guess-btn">Start Game</button>
+  </div>
+</div>
+
+<main id="gameSection" class="game hidden">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <button id="backToMainBtn" class="back-btn">Back to Main</button>
+    <button id="changeDifficultyBtn" class="back-btn">Change Difficulty</button>
+  </div>
+
   <div class="info">
     <div class="description">
       Choose the player with the better stat.<br>

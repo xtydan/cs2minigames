@@ -10,8 +10,24 @@
     <h1>TeamsGuesser</h1>
     <p>Guess the player based off all teams he played for. Data taken on 5.02.26.</p>
 
+    <!-- DIFFICULTY SELECTION -->
+    <div id="setupSection">
+      <div class="hint">
+        <p>Select difficulty and start the game.</p>
+        <p>The easy database contains 150 popular players, while the hard database has nearly 1400 players.</p>
+        <p>Both databases include only players with 300+ maps played since 2016.</p>
+      </div>
+      <div class="input-section">
+        <button id="goBackBtn" class="back-btn">Go Back</button>
+        <button id="easyBtn" class="difficulty-btn selected">Easy</button>
+        <button id="hardBtn" class="difficulty-btn">Hard</button>
+        <button id="startBtn" class="start-btn">Start Game</button>
+      </div>
+    </div>
+
     <!-- LEVEL SELECTION -->
-    <div id="levelSelection" class="tiles-container">
+    <div id="levelSelection" class="tiles-container hidden">
+      <button id="backToDifficultyBtn" class="back-btn" style="position: absolute; top: 20px; left: 20px;">Go Back</button>
       <div class="level-tile" data-level="easy">
         <div class="level-name">Easy</div>
         <div class="level-desc">Teams + Dates</div>
@@ -28,6 +44,10 @@
 
     <!-- GAME PANEL -->
     <div id="gamePanel" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <button id="backToMainBtn" class="back-btn">Back to Main</button>
+        <button id="changeDifficultyBtn" class="back-btn">Change Difficulty</button>
+      </div>
       <div id="levelInfo" class="legend"></div>
       <div id="tiles" class="tiles-container"></div>
 

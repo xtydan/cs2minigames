@@ -16,10 +16,6 @@ body {
 .topbar {
     text-align: center;
     margin-bottom: 40px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    border: 2px solid rgba(96, 165, 250, 0.3);
 }
 
 .topbar h1 {
@@ -202,6 +198,103 @@ body {
     width: 100px;
     height: 100px;
     object-fit: contain;
+}
+
+/* Hint */
+.hint {
+    background: rgba(96, 165, 250, 0.15);
+    border: 2px solid rgba(96, 165, 250, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hint p {
+    font-size: 1.1rem;
+    color: #93c5fd;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hint p:last-child {
+    margin-bottom: 0;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.guess-btn {
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    color: white;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+}
+
+.guess-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.6);
+}
+
+.guess-btn:active {
+    transform: translateY(0);
+}
+
+.difficulty-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(96, 165, 250, 0.3);
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+    background: rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.6);
+}
+
+.difficulty-btn.selected {
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    border-color: #60a5fa;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(96, 165, 250, 0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.6);
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* Responsive */

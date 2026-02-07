@@ -12,24 +12,45 @@
       <h1>HLTV Guess Who</h1>
     </header>
 
-    <div class="hint">
-      <p>Guess the player based on revealed clues. Type a name and click Guess.</p>
-    </div>
-
-    <div class="input-section">
-      <div class="input-wrapper">
-        <input type="text" id="playerInput" placeholder="Enter player name...">
-        <div id="autocomplete-list" class="autocomplete-items"></div>
+    <div id="setupSection">
+     <div class="hint">
+        <p>Select difficulty and start the game.</p>
+        <p>The easy database contains 150 popular players, while the hard database has nearly 1400 players.</p>
+        <p>Both databases include only players with 300+ maps played since 2016.</p>
       </div>
-      <button id="guessBtn" class="guess-btn">Guess</button>
+      <div class="input-section">
+        <button id="goBackBtn" class="back-btn">Go Back</button>
+        <button id="easyBtn" class="difficulty-btn selected">Easy</button>
+        <button id="hardBtn" class="difficulty-btn">Hard</button>
+        <button id="startBtn" class="guess-btn">Start Game</button>
+      </div>
     </div>
 
-    <div id="tilesContainer" class="players-grid tiles-container"></div>
+    <div id="gameSection" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <button id="backToMainBtn" class="back-btn">Back to Main</button>
+        <button id="changeDifficultyBtn" class="back-btn">Change Difficulty</button>
+      </div>
 
-    <div id="endGame" class="feedback end-game hidden">
-      <h2>Game Over!</h2>
-      <p id="finalScore"></p>
-      <button id="restartBtn" class="next-btn">Play Again</button>
+      <div class="hint">
+        <p>Guess the player based on revealed clues. Type a name and click Guess.</p>
+      </div>
+
+      <div class="input-section">
+        <div class="input-wrapper">
+          <input type="text" id="playerInput" placeholder="Enter player name...">
+          <div id="autocomplete-list" class="autocomplete-items"></div>
+        </div>
+        <button id="guessBtn" class="guess-btn">Guess</button>
+      </div>
+
+      <div id="tilesContainer" class="players-grid tiles-container"></div>
+
+      <div id="endGame" class="feedback end-game hidden">
+        <h2>Game Over!</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn" class="next-btn">Play Again</button>
+      </div>
     </div>
   </div>
 

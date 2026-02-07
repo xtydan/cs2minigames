@@ -122,12 +122,19 @@ main {
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     color: #94a3b8;
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.2);
+}
+
+.by-tydan {
+    font-size: 0.8rem;
+    color: #64748b;
 }
 
 /* ===== RESPONSIVE ===== */

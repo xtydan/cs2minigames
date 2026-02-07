@@ -3,6 +3,7 @@ let players = [];
 let currentRound = null;
 let score = 0;
 let total = 0;
+let selectedDatabase = 'easyPlayers.json';
 
 // DOM elements
 const loadingEl = document.getElementById('loading');
@@ -14,18 +15,25 @@ const nextBtn = document.getElementById('next-btn');
 const scoreEl = document.getElementById('score');
 const totalEl = document.getElementById('total');
 const hintText = document.getElementById('hint-text');
+const setupSection = document.getElementById('setupSection');
+const gameHeader = document.getElementById('gameHeader');
+const easyBtn = document.getElementById('easyBtn');
+const hardBtn = document.getElementById('hardBtn');
+const startBtn = document.getElementById('startBtn');
+const changeDifficultyBtn = document.getElementById('changeDifficultyBtn');
+const mainMenuBtn = document.getElementById('mainMenuBtn');
 
 // Load players from JSON
 async function loadPlayers() {
     try {
-        const response = await fetch('players.json');
+        const response = await fetch(selectedDatabase);
         players = await response.json();
         loadingEl.style.display = 'none';
         gameContainer.style.display = 'block';
         generateRound();
     } catch (error) {
         console.error('Error loading players:', error);
-        loadingEl.innerHTML = '<p>Error loading game. Make sure players.json is in the same folder.</p>';
+        loadingEl.innerHTML = '<p>Error loading game. Make sure the selected database file is in the same folder.</p>';
     }
 }
 
@@ -285,7 +293,7 @@ function handlePlayerClick(playerNick, clickedCard) {
                         <h3>${player.nick}</h3>
                     </div>
                     <div class="player-team">
-                        <span>${player.stats.team}</span>
+                        <span>${player.stats.team || 'no current team'}</span>
                     </div>
                 </div>
             </div>
@@ -307,8 +315,8 @@ function handlePlayerClick(playerNick, clickedCard) {
                     <div class="stat-value">${player.stats.maps}</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-label">K/D Diff</div>
-                    <div class="stat-value">${player.stats.kdDiff > 0 ? '+' : ''}${player.stats.kdDiff}</div>
+                    <div class="stat-label">Age</div>
+                    <div class="stat-value">${player.stats.age}</div>
                 </div>
             </div>
         `;
@@ -336,10 +344,50 @@ function handlePlayerClick(playerNick, clickedCard) {
     feedbackEl.style.display = 'block';
 }
 
+// Difficulty selection
+easyBtn.addEventListener('click', () => {
+    selectedDatabase = 'easyPlayers.json';
+    easyBtn.classList.add('selected');
+    hardBtn.classList.remove('selected');
+});
+
+hardBtn.addEventListener('click', () => {
+    selectedDatabase = 'hardPlayers.json';
+    hardBtn.classList.add('selected');
+    easyBtn.classList.remove('selected');
+});
+
+// Go back button
+goBackBtn.addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
+
+// Start game button
+startBtn.addEventListener('click', () => {
+    setupSection.style.display = 'none';
+    gameHeader.style.display = 'block';
+    loadPlayers();
+});
+
+// Change difficulty button
+changeDifficultyBtn.addEventListener('click', () => {
+    setupSection.style.display = 'block';
+    gameHeader.style.display = 'none';
+    gameContainer.style.display = 'none';
+    loadingEl.style.display = 'none';
+    feedbackEl.style.display = 'none';
+    score = 0;
+    total = 0;
+    scoreEl.textContent = score;
+    totalEl.textContent = total;
+});
+
+// Go to Main Menu button
+mainMenuBtn.addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
+
 // Next round button
 nextBtn.addEventListener('click', () => {
     generateRound();
 });
-
-// Start game
-loadPlayers();

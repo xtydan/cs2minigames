@@ -8,14 +8,35 @@
 </head>
 <body>
     <div class="container">
+        <!-- DIFFICULTY SELECTION -->
+        <div id="setupSection">
+            <h1 class="game-title">🧩 Who Doesn't Belong?</h1>
+            <div class="hint">
+                <p>Select difficulty and start the game.</p>
+                <p>The easy database contains 150 popular players, while the hard database has nearly 1400 players.</p>
+                <p>Both databases include only players with 300+ maps played since 2016.</p>
+                <p>Start the game to load the players.</p>
+            </div>
+            <div class="input-section">
+                <button id="goBackBtn" class="back-btn">Go Back</button>
+                <button id="easyBtn" class="difficulty-btn selected">Easy</button>
+                <button id="hardBtn" class="difficulty-btn">Hard</button>
+                <button id="startBtn" class="start-btn">Start Game</button>
+            </div>
+        </div>
+
         <!-- Header -->
-        <div class="header">
+        <div class="header" id="gameHeader" style="display: none;">
             <h1>🧩 Who Doesn't Belong?</h1>
             <p class="subtitle">Find the player who doesn't match the others!</p>
-            <div class="score">
-                Score: <span id="score">0</span> / <span id="total">0</span>
+            <div class="header-controls">
+                <button id="mainMenuBtn" class="back-btn">Go to Main Menu</button>
+                <div class="score">
+                    Score: <span id="score">0</span> / <span id="total">0</span>
+                </div>
+                <button id="changeDifficultyBtn" class="change-difficulty-btn">Change Difficulty</button>
             </div>
-            
+
             <!-- Collapsible Legend -->
             <details class="legend-container">
                 <summary class="legend-toggle">📖 Game Categories Legend</summary>

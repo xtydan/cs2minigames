@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     endScreen.style.display = "none";
     startGame();
   });
+  goBackBtn.addEventListener("click", () => {
+    window.location.href = "../index.html";
+  });
 
   function startGame() {
     grid.innerHTML = "";
