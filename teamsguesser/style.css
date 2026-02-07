@@ -17,6 +17,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .game-container h1 {
@@ -274,7 +275,7 @@ body {
 }
 
 #tiles.tiles-container {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .tile-wrapper img.tile-flag {
@@ -385,7 +386,7 @@ body {
 }
 
 .end-game {
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -406,7 +407,8 @@ body {
   background: linear-gradient(135deg, #60a5fa, #a78bfa);
   color: white;
   cursor: pointer;
-  margin-top: 20px;
+  margin: 20px auto;
+  display: block;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);

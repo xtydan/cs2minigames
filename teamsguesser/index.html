@@ -8,6 +8,10 @@
 <body>
   <div class="game-container">
     <h1>TeamsGuesser</h1>
+    <div id="topButtons" style="display: none; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <button id="backToMainBtn" class="back-btn">Back to Main</button>
+      <button id="changeDifficultyBtn" class="back-btn">Change Difficulty</button>
+    </div>
     <p>Guess the player based off all teams he played for. Data taken on 5.02.26.</p>
 
     <!-- DIFFICULTY SELECTION -->
@@ -44,10 +48,6 @@
 
     <!-- GAME PANEL -->
     <div id="gamePanel" class="hidden">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <button id="backToMainBtn" class="back-btn">Back to Main</button>
-        <button id="changeDifficultyBtn" class="back-btn">Change Difficulty</button>
-      </div>
       <div id="levelInfo" class="legend"></div>
       <div id="tiles" class="tiles-container"></div>
 

@@ -21,6 +21,7 @@ const easyBtn = document.getElementById('easyBtn');
 const hardBtn = document.getElementById('hardBtn');
 const startBtn = document.getElementById('startBtn');
 const backToDifficultyBtn = document.getElementById('backToDifficultyBtn');
+const topButtons = document.getElementById('topButtons');
 
 const levelDescriptions = {
   easy: 'You see teams and dates, guess the player!',
@@ -55,6 +56,7 @@ function startGame(level) {
   currentLevel = level;
   levelSelection.classList.add('hidden');
   gamePanel.classList.remove('hidden');
+  topButtons.style.display = 'flex'; // Show top buttons when game starts
   levelInfo.textContent = levelDescriptions[level];
 
   tilesContainer.innerHTML = '';
@@ -66,6 +68,7 @@ function startGame(level) {
   endGameEl.classList.add('hidden');
   playerInput.disabled = false;
   guessBtn.disabled = false;
+  backBtn.style.display = 'none'; // Hide the back button initially
 
   targetPlayer = playersData[Math.floor(Math.random() * playersData.length)];
 
@@ -141,6 +144,9 @@ function checkGuess() {
     endGameEl.classList.remove('hidden');
     playerInput.disabled = true;
     guessBtn.disabled = true;
+    backBtn.textContent = 'Next Player';
+    backBtn.style.display = 'block';
+    endGameEl.appendChild(backBtn);
   } else {
     attemptsLeft--;
     attemptsLeftEl.textContent = attemptsLeft;
@@ -159,6 +165,9 @@ function checkGuess() {
       endGameEl.innerHTML = `❌ Game Over! The player was ${targetPlayer.nick}${photoHtml}`;
       playerInput.disabled = true;
       guessBtn.disabled = true;
+      backBtn.textContent = 'Next Player';
+      backBtn.style.display = 'block';
+      endGameEl.appendChild(backBtn);
     }
   }
 }
@@ -201,6 +210,7 @@ backToMainBtn.addEventListener('click', () => {
 changeDifficultyBtn.addEventListener('click', () => {
   gamePanel.classList.add('hidden');
   setupSection.classList.remove('hidden');
+  topButtons.style.display = 'none'; // Hide top buttons when changing difficulty
   // Reset game state
   currentLevel = null;
   targetPlayer = null;
@@ -213,9 +223,13 @@ changeDifficultyBtn.addEventListener('click', () => {
 
 // BACK BUTTON
 backBtn.addEventListener('click', () => {
-  gamePanel.classList.add('hidden');
-  levelSelection.classList.remove('hidden');
-  document.querySelectorAll('.level-tile').forEach(t => t.classList.remove('active'));
+  if (backBtn.textContent === 'Next Player') {
+    startGame(currentLevel);
+  } else {
+    gamePanel.classList.add('hidden');
+    levelSelection.classList.remove('hidden');
+    document.querySelectorAll('.level-tile').forEach(t => t.classList.remove('active'));
+  }
 });
 
 // BACK TO DIFFICULTY BUTTON

@@ -1,0 +1,3 @@
+- [ ] Hide backBtn in startGame
+- [ ] Show backBtn as "Next Player" after game ends in checkGuess
+- [ ] Change backBtn listener to startGame(currentLevel)
