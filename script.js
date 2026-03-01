@@ -21,6 +21,7 @@ fetch("games.json")
 
       grid.appendChild(card);
     });
+
   })
   .catch(() => {
     document.getElementById("gamesGrid").innerHTML =

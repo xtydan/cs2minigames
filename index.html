@@ -5,15 +5,54 @@
   <title>CS2 Games Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <header class="top">
-  <h1>CS2 GAMES</h1>
-  <p>Select a game</p>
+  <h1>CS2 HUB</h1>
+  <p>Mini Games & Match Analyses</p>
 </header>
 
 <main>
-  <div id="gamesGrid" class="grid"></div>
+  <div class="hub-layout">
+
+    <!-- ===== LEWA STRONA — ANALIZY ===== -->
+    <section class="analyses-panel">
+
+      <div class="hub-section-title">
+        📊 Match Analyses
+      </div>
+
+      <div class="analyses-grid" id="analysesGrid">
+        <a href="analyses/" class="card">  ✅
+          <div class="card-icon">📊</div>
+          <div class="card-content">
+            <h2>CS2 Pro Match Predictions</h2>
+            <p>HLTV map stats • Pick analysis • Win probability</p>
+          </div>
+        </a>
+
+        <a href="analyses/" class="card">  ✅
+          <div class="card-icon">📊</div>
+          <div class="card-content">
+            <h2>View all analyses</h2>
+            <p>Explore more match predictions and insights</p>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ===== PRAWA STRONA — MINI GRY ===== -->
+    <section class="games-panel">
+      <div class="hub-section-title">
+        🎮 Mini Games
+      </div>
+
+      <div class="games-grid" id="gamesGrid"></div>
+    </section>
+
+  </div>
 </main>
 
 <footer>
@@ -23,5 +62,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

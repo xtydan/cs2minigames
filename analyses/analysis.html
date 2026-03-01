@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CS2 Analysis</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      min-height: 100vh;
+      color: white;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 16px 24px;
+      background: rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      transition: color .2s;
+    }
+    .back-btn:hover { color: #60a5fa; }
+    .back-btn svg { width: 16px; height: 16px; }
+    .nav-sep { color: rgba(255,255,255,0.2); }
+    .nav-title { color: #cbd5e1; font-size: .85rem; }
+
+    /* ── HERO ── */
+    .hero {
+      background: rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 24px 32px;
+      text-align: center;
+      animation: fadeInDown .6s ease-out;
+    }
+    .hero-tournament {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .hero-teams {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-team { text-align: center; }
+    .hero-team-logo {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+    }
+    .hero-team-logo-placeholder {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0 auto 10px;
+      background: rgba(255,255,255,0.08);
+      border: 2px solid rgba(255,255,255,0.12);
+      color: #94a3b8;
+    }
+    .hero-team-name {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+    }
+    .hero-team-name.t1 {
+      color: #60a5fa;
+      text-shadow: 0 0 30px rgba(96,165,250,0.3);
+    }
+    .hero-team-name.t2 {
+      color: #34d399;
+      text-shadow: 0 0 30px rgba(52,211,153,0.3);
+    }
+    .hero-rank { font-size: .8rem; color: #64748b; margin-top: 4px; }
+    .hero-vs {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #334155;
+      letter-spacing: .1em;
+    }
+
+    /* win probability bar */
+    .prob-bar-wrap {
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+    .prob-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: .85rem;
+      font-weight: 700;
+    }
+    .prob-labels .t1c { color: #60a5fa; }
+    .prob-labels .t2c { color: #34d399; }
+    .prob-bar {
+      height: 10px;
+      border-radius: 5px;
+      background: linear-gradient(to right, #60a5fa var(--t1), #34d399 var(--t1));
+      position: relative;
+    }
+    .prob-bar::after {
+      content: '';
+      position: absolute;
+      left: var(--t1);
+      top: -3px;
+      width: 2px;
+      height: 16px;
+      background: white;
+      border-radius: 2px;
+      transform: translateX(-50%);
+    }
+
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .badge-format { border-color: rgba(255,255,255,0.15); color: #94a3b8; background: rgba(255,255,255,0.05); }
+    .badge-pred { border-color: rgba(96,165,250,0.4); color: #60a5fa; background: rgba(96,165,250,0.1); }
+    .badge-date { border-color: rgba(255,255,255,0.1); color: #64748b; background: rgba(0,0,0,0.2); }
+
+    /* ── CONTENT ── */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      animation: fadeIn .6s ease-out;
+    }
+
+    /* section block */
+    .section {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: 14px 20px;
+      background: rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: #94a3b8;
+    }
+    .section-header .icon { font-size: 1rem; }
+    .section-body { padding: 20px; }
+
+    /* overview */
+    .overview-text {
+      color: #cbd5e1;
+      font-size: .95rem;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    /* data grid */
+    .data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .data-item {
+      background: rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+    .data-item.full { grid-column: 1/-1; }
+    .data-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: #64748b; margin-bottom: 5px; }
+    .data-value { font-size: .95rem; font-weight: 600; color: #e2e8f0; }
+    .data-value .t1v { color: #60a5fa; }
+    .data-value .t2v { color: #34d399; }
+    .data-value .edge { color: #4ade80; font-size: .85rem; margin-top: 3px; }
+
+    /* map win chance mini bar */
+    .mini-bar-wrap { margin-top: 8px; }
+    .mini-bar-labels { display: flex; justify-content: space-between; font-size: .75rem; margin-bottom: 4px; }
+    .mini-bar-labels span:first-child { color: #60a5fa; }
+    .mini-bar-labels span:last-child { color: #34d399; }
+    .mini-bar {
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(to right, #60a5fa var(--p), #34d399 var(--p));
+    }
+
+    /* bets */
+    .bets-list { display: flex; flex-direction: column; gap: 10px; }
+    .bet-card {
+      border-radius: 10px;
+      padding: 14px 16px;
+      border: 1px solid;
+    }
+    .bet-card.tier-1 { background: rgba(96,165,250,0.08); border-color: rgba(96,165,250,0.3); }
+    .bet-card.tier-2 { background: rgba(52,211,153,0.06); border-color: rgba(52,211,153,0.2); }
+    .bet-card.tier-3 { background: rgba(251,191,36,0.06); border-color: rgba(251,191,36,0.2); }
+    .bet-header { display: flex; align-items: center; gap: .5rem; margin-bottom: 6px; }
+    .bet-tier-icon { font-size: 1rem; }
+    .bet-label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    .bet-card.tier-1 .bet-label { color: #60a5fa; }
+    .bet-card.tier-2 .bet-label { color: #34d399; }
+    .bet-card.tier-3 .bet-label { color: #fbbf24; }
+    .bet-pick { font-weight: 700; font-size: 1rem; color: white; margin-bottom: 8px; }
+    .bet-meta { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .bet-tag {
+      font-size: .72rem;
+      padding: 2px 8px;
+      border-radius: 5px;
+      background: rgba(255,255,255,0.08);
+      color: #94a3b8;
+    }
+    .bet-note { margin-top: 6px; font-size: .82rem; color: #64748b; }
+
+    /* risks */
+    .risks-list { display: flex; flex-direction: column; gap: 8px; }
+    .risk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      padding: 10px 14px;
+      background: rgba(239,68,68,0.06);
+      border: 1px solid rgba(239,68,68,0.15);
+      border-radius: 8px;
+      font-size: .9rem;
+      color: #fca5a5;
+    }
+    .risk-icon { flex-shrink: 0; margin-top: 2px; }
+
+    /* confidence */
+    .conf-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .conf-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .conf-sub { font-size: .75rem; color: #64748b; margin-top: 4px; text-transform: uppercase; letter-spacing: .06em; }
+    .conf-dots-big { display: flex; gap: 6px; flex-wrap: wrap; }
+    .conf-dot-big {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      transition: background .3s;
+    }
+    .conf-dot-big.on { background: linear-gradient(135deg, #60a5fa, #34d399); }
+    .conf-note {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: .88rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+
+    /* editor prediction */
+    .editor-card {
+      border-radius: 12px;
+      padding: 18px 20px;
+      background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.04));
+      border: 1px solid rgba(251,191,36,0.3);
+    }
+    .editor-top {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      margin-bottom: 12px;
+    }
+    .editor-avatar {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; font-weight: 800; color: #0f172a;
+      flex-shrink: 0;
+    }
+    .editor-meta { display: flex; flex-direction: column; }
+    .editor-name { font-weight: 700; font-size: .9rem; color: #fbbf24; }
+    .editor-role { font-size: .7rem; color: #78350f; text-transform: uppercase; letter-spacing: .06em; }
+    .editor-pick { font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 6px; }
+    .editor-note { font-size: .88rem; color: #94a3b8; line-height: 1.6; }
+    .editor-tags { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 10px; }
+    .editor-tag {
+      font-size: .72rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px;
+      background: rgba(251,191,36,0.1);
+      border: 1px solid rgba(251,191,36,0.25);
+      color: #fbbf24;
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+
+    /* not found */
+    .not-found {
+      text-align: center;
+      padding: 5rem 2rem;
+      color: #64748b;
+    }
+    .not-found h2 { font-size: 1.8rem; color: #94a3b8; margin-bottom: .5rem; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      color: #94a3b8;
+      font-size: .9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.2);
+    }
+    .by-tydan { font-size: .8rem; color: #64748b; }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .data-grid { grid-template-columns: 1fr; }
+      .data-item.full { grid-column: 1; }
+      .hero-team-name { font-size: 1.4rem; }
+      .conf-wrap { flex-direction: column; align-items: flex-start; gap: .75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="./" class="back-btn">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M10 3L5 8l5 5"/>
+    </svg>
+    All Analyses
+  </a>
+  <span class="nav-sep">/</span>
+  <span class="nav-title" id="navTitle">Loading...</span>
+</nav>
+
+<div id="app"></div>
+
+<footer>
+  <span>CS2 Match Analyses</span>
+  <span class="by-tydan">by Tydan</span>
+</footer>
+
+<script src="matches.js"></script>
+<script src="logos.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  const m = matches.find(x => x.id === id);
+  const app = document.getElementById('app');
+
+  function formatDate(dateStr) {
+    const d = new Date(dateStr + 'T12:00:00');
+    return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' });
+  }
+
+  function teamLogo(shortName, cls) {
+    const url = (typeof teamLogos !== 'undefined') ? teamLogos[shortName] : null;
+    if (url && url !== 'placeholder.png') {
+      return `<img class="hero-team-logo" src="${url}" alt="${shortName}" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'hero-team-logo-placeholder', textContent:'${shortName.substring(0,2).toUpperCase()}'}))">`;
+    }
+    return `<div class="hero-team-logo-placeholder">${shortName.substring(0,2).toUpperCase()}</div>`;
+  }
+
+  function confDots(n) {
+    let html = '';
+    for (let i = 1; i <= 10; i++) {
+      html += `<div class="conf-dot-big ${i <= n ? 'on' : ''}"></div>`;
+    }
+    return html;
+  }
+
+  function tierIcon(t) {
+    return ['🥇','🥈','🥉'][t-1] || '•';
+  }
+
+  if (!m) {
+    app.innerHTML = `
+      <div class="not-found">
+        <h2>Analiza nie znaleziona</h2>
+        <p>Sprawdź czy ID w URL jest poprawne.</p>
+      </div>`;
+  } else {
+    document.title = `${m.team1.shortName} vs ${m.team2.shortName} — CS2 Analysis`;
+    document.getElementById('navTitle').textContent = `${m.team1.shortName} vs ${m.team2.shortName}`;
+
+    const t1p = m.team1.winChance;
+    const betsHTML = m.bets.map(b => `
+      <div class="bet-card tier-${b.tier}">
+        <div class="bet-header">
+          <span class="bet-tier-icon">${tierIcon(b.tier)}</span>
+          <span class="bet-label">${b.label}</span>
+        </div>
+        <div class="bet-pick">${b.pick}</div>
+        <div class="bet-meta">
+          ${b.minOdds ? `<span class="bet-tag">Min odds: ${b.minOdds}</span>` : ''}
+          <span class="bet-tag">Stake: ${b.stake}</span>
+        </div>
+        <div class="bet-note">${b.note}</div>
+      </div>`).join('');
+
+    const risksHTML = m.risks.map(r => `
+      <div class="risk-item">
+        <span class="risk-icon">⚠️</span>
+        <span>${r}</span>
+      </div>`).join('');
+
+    const mapP = m.data.mapWinChance;
+
+    app.innerHTML = `
+      <div class="hero">
+        <div class="hero-tournament">${m.tournament} · ${m.format} · ${formatDate(m.date)}</div>
+        <div class="hero-teams">
+          <div class="hero-team">
+            ${teamLogo(m.team1.shortName, 't1')}
+            <div class="hero-team-name t1">${m.team1.name}</div>
+            <div class="hero-rank">#${m.team1.rank} HLTV</div>
+          </div>
+          <div class="hero-vs">VS</div>
+          <div class="hero-team">
+            ${teamLogo(m.team2.shortName, 't2')}
+            <div class="hero-team-name t2">${m.team2.name}</div>
+            <div class="hero-rank">#${m.team2.rank} HLTV</div>
+          </div>
+        </div>
+
+        <div class="prob-bar-wrap">
+          <div class="prob-labels">
+            <span class="t1c">${m.team1.shortName} ${t1p}%</span>
+            <span class="t2c">${m.team2.winChance}% ${m.team2.shortName}</span>
+          </div>
+          <div class="prob-bar" style="--t1:${t1p}%"></div>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge badge-format">${m.format}</span>
+          <span class="badge badge-pred">🏆 ${m.prediction} ${m.predictionScore}</span>
+          <span class="badge badge-date">${formatDate(m.date)}</span>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <!-- OVERVIEW -->
+        <div class="section">
+          <div class="section-header"><span class="icon">🧠</span> Match Overview</div>
+          <div class="section-body">
+            <div class="overview-text">${m.overview}</div>
+          </div>
+        </div>
+
+        <!-- HARD DATA -->
+        <div class="section">
+          <div class="section-header"><span class="icon">📊</span> Hard Data</div>
+          <div class="section-body">
+            <div class="data-grid">
+
+              <div class="data-item">
+                <div class="data-label">Recent Form</div>
+                <div class="data-value">
+                  <span class="t1v">${m.team1.shortName}:</span> ${m.data.recentForm.team1}
+                </div>
+              </div>
+
+              <div class="data-item">
+                <div class="data-label">Recent Form</div>
+                <div class="data-value">
+                  <span class="t2v">${m.team2.shortName}:</span> ${m.data.recentForm.team2}
+                </div>
+              </div>
+
+              <div class="data-item">
+                <div class="data-label">Head to Head</div>
+                <div class="data-value">${m.data.headToHead}</div>
+              </div>
+
+              <div class="data-item">
+                <div class="data-label">Lineup Stability</div>
+                <div class="data-value">${m.data.lineupStability}</div>
+              </div>
+
+              <div class="data-item full">
+                <div class="data-label">Win Probability on Neutral Map</div>
+                <div class="mini-bar-wrap">
+                  <div class="mini-bar-labels">
+                    <span>${m.team1.shortName} ${mapP}%</span>
+                    <span>${100 - mapP}% ${m.team2.shortName}</span>
+                  </div>
+                  <div class="mini-bar" style="--p:${mapP}%"></div>
+                </div>
+              </div>
+
+              <div class="data-item">
+                <div class="data-label">Estimated Round Diff</div>
+                <div class="data-value">${m.data.roundDiff}</div>
+              </div>
+
+              <div class="data-item">
+                <div class="data-label">Market Odds (${m.team1.shortName})</div>
+                <div class="data-value">
+                  ${m.data.marketOdds.team1Odds}
+                  <span style="color:#64748b;font-size:.8rem"> → implied ${m.data.marketOdds.impliedProb}%</span>
+                  <div class="edge">✅ Edge: ${m.data.marketOdds.modelEdge}</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- BETTING PICKS -->
+        <div class="section">
+          <div class="section-header"><span class="icon">🎯</span> Betting Picks</div>
+          <div class="section-body">
+            <div class="bets-list">${betsHTML}</div>
+          </div>
+        </div>
+
+        <!-- RISK FACTORS -->
+        <div class="section">
+          <div class="section-header"><span class="icon">⚠️</span> Match Risk Factors</div>
+          <div class="section-body">
+            <div class="risks-list">${risksHTML}</div>
+          </div>
+        </div>
+
+        <!-- CONFIDENCE -->
+        <div class="section">
+          <div class="section-header"><span class="icon">📊</span> Confidence Rating</div>
+          <div class="section-body">
+            <div class="conf-wrap">
+              <div>
+                <div class="conf-number">${m.confidence}</div>
+                <div class="conf-sub">out of 10</div>
+              </div>
+              <div class="conf-dots-big">${confDots(m.confidence)}</div>
+            </div>
+            <div class="conf-note">${m.confidenceNote}</div>
+          </div>
+        </div>
+
+        ${m.editorPick ? `
+        <!-- EDITOR'S PREDICTION -->
+        <div class="section">
+          <div class="section-header"><span class="icon">✍️</span> Editor's Prediction</div>
+          <div class="section-body">
+            <div class="editor-card">
+              <div class="editor-top">
+                <div class="editor-avatar">T</div>
+                <div class="editor-meta">
+                  <div class="editor-name">Tydan</div>
+                  <div class="editor-role">Editor · Personal Pick</div>
+                </div>
+              </div>
+              <div class="editor-pick">🎯 ${m.editorPick.pick}</div>
+              ${m.editorPick.note ? `<div class="editor-note">${m.editorPick.note}</div>` : ''}
+              <div class="editor-tags">
+                ${m.editorPick.stake ? `<span class="editor-tag">Stake: ${m.editorPick.stake}</span>` : ''}
+                ${m.editorPick.odds ? `<span class="editor-tag">Odds: ${m.editorPick.odds}</span>` : ''}
+                ${m.editorPick.confidence ? `<span class="editor-tag">Confidence: ${m.editorPick.confidence}</span>` : ''}
+              </div>
+            </div>
+          </div>
+        </div>` : ''}
+
+      </div>`;
+  }
+</script>
+</body>
+</html>
